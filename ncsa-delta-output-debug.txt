@@ -1,0 +1,1259 @@
+[gpua040.delta.ncsa.illinois.edu:4110029] mca: base: component_find: searching NULL for ras components
+[gpua040.delta.ncsa.illinois.edu:4110029] mca: base: find_dyn_components: checking NULL for ras components
+[gpua040.delta.ncsa.illinois.edu:4110029] pmix:mca: base: components_register: registering framework ras components
+[gpua040.delta.ncsa.illinois.edu:4110029] pmix:mca: base: components_register: found loaded component simulator
+[gpua040.delta.ncsa.illinois.edu:4110029] pmix:mca: base: components_register: component simulator register function successful
+[gpua040.delta.ncsa.illinois.edu:4110029] pmix:mca: base: components_register: found loaded component testrm
+[gpua040.delta.ncsa.illinois.edu:4110029] pmix:mca: base: components_register: component testrm register function successful
+[gpua040.delta.ncsa.illinois.edu:4110029] pmix:mca: base: components_register: found loaded component pbs
+[gpua040.delta.ncsa.illinois.edu:4110029] pmix:mca: base: components_register: component pbs register function successful
+[gpua040.delta.ncsa.illinois.edu:4110029] pmix:mca: base: components_register: found loaded component slurm
+[gpua040.delta.ncsa.illinois.edu:4110029] pmix:mca: base: components_register: component slurm register function successful
+[gpua040.delta.ncsa.illinois.edu:4110029] mca: base: components_open: opening ras components
+[gpua040.delta.ncsa.illinois.edu:4110029] mca: base: components_open: found loaded component simulator
+[gpua040.delta.ncsa.illinois.edu:4110029] mca: base: components_open: found loaded component testrm
+[gpua040.delta.ncsa.illinois.edu:4110029] mca: base: components_open: found loaded component pbs
+[gpua040.delta.ncsa.illinois.edu:4110029] mca: base: components_open: component pbs open function successful
+[gpua040.delta.ncsa.illinois.edu:4110029] mca: base: components_open: found loaded component slurm
+[gpua040.delta.ncsa.illinois.edu:4110029] mca: base: components_open: component slurm open function successful
+[gpua040.delta.ncsa.illinois.edu:4110029] mca:base:select: Auto-selecting ras components
+[gpua040.delta.ncsa.illinois.edu:4110029] mca:base:select:(  ras) Querying component [simulator]
+[gpua040.delta.ncsa.illinois.edu:4110029] mca:base:select:(  ras) Querying component [testrm]
+[gpua040.delta.ncsa.illinois.edu:4110029] mca:base:select:(  ras) Querying component [pbs]
+[gpua040.delta.ncsa.illinois.edu:4110029] mca:base:select:(  ras) Querying component [slurm]
+[gpua040.delta.ncsa.illinois.edu:4110029] [prterun-gpua040-4110029@0,0] ras:slurm: available for selection
+[gpua040.delta.ncsa.illinois.edu:4110029] mca:base:select:(  ras) Query of component [slurm] set priority to 50
+[gpua040.delta.ncsa.illinois.edu:4110029] mca:base:select:(  ras) Selected component [slurm]
+[gpua040.delta.ncsa.illinois.edu:4110029] mca: base: close: unloading component simulator
+[gpua040.delta.ncsa.illinois.edu:4110029] mca: base: close: unloading component testrm
+[gpua040.delta.ncsa.illinois.edu:4110029] mca: base: close: unloading component pbs
+[gpua040.delta.ncsa.illinois.edu:4110029] [prterun-gpua040-4110029@0,0] ras:base:allocate
+[gpua040.delta.ncsa.illinois.edu:4110029] [prterun-gpua040-4110029@0,0] ras:slurm:allocate:discover: checking nodelist: gpua040
+[gpua040.delta.ncsa.illinois.edu:4110029] [prterun-gpua040-4110029@0,0] ras:slurm:allocate:discover: found node gpua040
+[gpua040.delta.ncsa.illinois.edu:4110029] [prterun-gpua040-4110029@0,0] ras:slurm:allocate:discover: adding node gpua040 (4 slots)
+[gpua040.delta.ncsa.illinois.edu:4110029] [prterun-gpua040-4110029@0,0] ras:slurm:allocate: success
+[gpua040.delta.ncsa.illinois.edu:4110029] [prterun-gpua040-4110029@0,0] ras:base:node_insert inserting 1 nodes
+[gpua040.delta.ncsa.illinois.edu:4110029] [prterun-gpua040-4110029@0,0] ras:base:node_insert node gpua040 slots 4
+
+======================   ALLOCATED NODES   ======================
+    prte: slots=0 max_slots=0 slots_inuse=0 state=UP
+	Flags: DAEMON_LAUNCHED:LOCATION_VERIFIED:NONUSABLE
+	aliases: gpua040.delta.ncsa.illinois.edu
+    gpua040: slots=4 max_slots=0 slots_inuse=0 state=UP
+	Flags: SLOTS_GIVEN
+	aliases: NONE
+=================================================================
+[gpua040.delta.ncsa.illinois.edu:4110029] [prterun-gpua040-4110029@0,0] ras:base:allocate
+[gpua040.delta.ncsa.illinois.edu:4110029] [prterun-gpua040-4110029@0,0] ras:base:allocate allocation already read
+libfabric:4110079:1741977414::core:core:fi_param_get_():373<info> variable perf_cntr=<not set>
+libfabric:4110079:1741977414::core:core:fi_param_get_():373<info> variable hook=<not set>
+libfabric:4110079:1741977414::core:core:fi_param_get_():373<info> variable hmem=<not set>
+libfabric:4110079:1741977414::core:core:cuda_hmem_verify_devices():572<info> Skipping check for NVIDIA devices with NVML routines
+libfabric:4110079:1741977414::core:core:cuda_hmem_verify_devices():598<info> Number of CUDA devices detected: 1
+libfabric:4110079:1741977414::core:core:cuda_hmem_detect_dmabuf_support():681<info> cuda dmabuf support status: 0
+libfabric:4110079:1741977414::core:core:fi_param_get_():373<info> variable hmem_cuda_use_gdrcopy=<not set>
+libfabric:4110079:1741977414::core:core:ofi_hmem_init():667<info> Hmem iface FI_HMEM_ROCR not supported
+libfabric:4110079:1741977414::core:core:ofi_hmem_init():667<info> Hmem iface FI_HMEM_ZE not supported
+libfabric:4110079:1741977414::core:core:ofi_hmem_init():667<info> Hmem iface FI_HMEM_NEURON not supported
+libfabric:4110079:1741977414::core:core:ofi_hmem_init():667<info> Hmem iface FI_HMEM_SYNAPSEAI not supported
+libfabric:4110079:1741977414::core:core:fi_param_get_():373<info> variable hmem_disable_p2p=<not set>
+libfabric:4110079:1741977414::core:mr:ofi_monitors_init():240<info> Initializing memory monitor uffd
+libfabric:4110079:1741977414::core:mr:ofi_monitors_init():240<info> Initializing memory monitor memhooks
+libfabric:4110079:1741977414::core:mr:ofi_monitors_init():240<info> Initializing memory monitor cuda
+libfabric:4110079:1741977414::core:mr:ofi_monitors_init():240<info> Initializing memory monitor cuda_ipc
+libfabric:4110079:1741977414::core:mr:ofi_monitors_init():240<info> Initializing memory monitor rocr
+libfabric:4110079:1741977414::core:mr:ofi_monitors_init():240<info> Initializing memory monitor rocr_ipc
+libfabric:4110079:1741977414::core:mr:ofi_monitors_init():240<info> Initializing memory monitor xpmem
+libfabric:4110079:1741977414::core:mr:ofi_monitors_init():240<info> Initializing memory monitor ze
+libfabric:4110079:1741977414::core:mr:ofi_monitors_init():240<info> Initializing memory monitor ze_ipc
+libfabric:4110079:1741977414::core:mr:ofi_monitors_init():240<info> Initializing memory monitor import
+libfabric:4110079:1741977414::core:mr:ofi_monitors_init():240<info> Initializing memory monitor kdreg2
+libfabric:4110079:1741977414::core:core:fi_param_get_():373<info> variable mr_cache_max_size=<not set>
+libfabric:4110079:1741977414::core:core:fi_param_get_():373<info> variable mr_cache_max_count=<not set>
+libfabric:4110079:1741977414::core:core:fi_param_get_():373<info> variable mr_cache_monitor=<not set>
+libfabric:4110079:1741977414::core:core:fi_param_get_():373<info> variable mr_cuda_cache_monitor_enabled=<not set>
+libfabric:4110079:1741977414::core:core:fi_param_get_():373<info> variable mr_rocr_cache_monitor_enabled=<not set>
+libfabric:4110079:1741977414::core:core:fi_param_get_():373<info> variable mr_ze_cache_monitor_enabled=<not set>
+libfabric:4110079:1741977414::core:mr:ofi_default_cache_size():67<info> default cache size=2110741088
+libfabric:4110079:1741977414::core:mr:ofi_monitors_init():317<info> Default memory monitor is: memhooks
+libfabric:4110079:1741977414::core:core:fi_param_get_():373<info> variable provider=<not set>
+libfabric:4110079:1741977414::core:core:fi_param_get_():373<info> variable universe_size=<not set>
+libfabric:4110079:1741977414::core:core:fi_param_get_():373<info> variable av_remove_cleanup=<not set>
+libfabric:4110079:1741977414::core:core:fi_param_get_():373<info> variable offload_coll_provider=<not set>
+libfabric:4110079:1741977414::core:core:fi_param_get_():373<info> variable provider_path=<not set>
+libfabric:4110079:1741977414::psm3:core:fi_psm3_ini():898<info> gpua040.delta.ncsa.illinois.edu:rank0: build options: VERSION=400.0=4.0.0.0, HAVE_PSM3_SRC=1, PSM3_CUDA=0
+libfabric:4110079:1741977414::psm3:core:psmx3_param_get_bool():96<info> gpua040.delta.ncsa.illinois.edu:rank0: variable FI_PSM3_NAME_SERVER=<not set>
+libfabric:4110079:1741977414::psm3:core:psmx3_param_get_bool():96<info> gpua040.delta.ncsa.illinois.edu:rank0: variable FI_PSM3_TAGGED_RMA=<not set>
+libfabric:4110079:1741977414::psm3:core:psmx3_param_get_str():126<info> gpua040.delta.ncsa.illinois.edu:rank0: variable FI_PSM3_UUID=<not set>
+libfabric:4110079:1741977414::psm3:core:psmx3_param_get_int():111<info> gpua040.delta.ncsa.illinois.edu:rank0: variable FI_PSM3_DELAY=<not set>
+libfabric:4110079:1741977414::psm3:core:psmx3_param_get_int():111<info> gpua040.delta.ncsa.illinois.edu:rank0: variable FI_PSM3_TIMEOUT=<not set>
+libfabric:4110079:1741977414::psm3:core:psmx3_param_get_int():111<info> gpua040.delta.ncsa.illinois.edu:rank0: variable FI_PSM3_PROG_INTERVAL=<not set>
+libfabric:4110079:1741977414::psm3:core:psmx3_param_get_str():126<info> gpua040.delta.ncsa.illinois.edu:rank0: variable FI_PSM3_PROG_AFFINITY=<not set>
+libfabric:4110079:1741977414::psm3:core:psmx3_param_get_int():111<info> gpua040.delta.ncsa.illinois.edu:rank0: variable FI_PSM3_INJECT_SIZE=<not set>
+libfabric:4110079:1741977414::psm3:core:psmx3_param_get_int():111<info> gpua040.delta.ncsa.illinois.edu:rank0: variable FI_PSM3_LOCK_LEVEL=<not set>
+libfabric:4110079:1741977414::psm3:core:psmx3_param_get_bool():96<info> gpua040.delta.ncsa.illinois.edu:rank0: variable FI_PSM3_LAZY_CONN=<not set>
+libfabric:4110079:1741977414::psm3:core:psmx3_param_get_int():111<info> gpua040.delta.ncsa.illinois.edu:rank0: variable FI_PSM3_CONN_TIMEOUT=<not set>
+libfabric:4110079:1741977414::psm3:core:psmx3_param_get_bool():96<info> gpua040.delta.ncsa.illinois.edu:rank0: variable FI_PSM3_DISCONNECT=<not set>
+libfabric:4110079:1741977414::psm3:core:psmx3_param_get_str():126<info> gpua040.delta.ncsa.illinois.edu:rank0: variable FI_PSM3_TAG_LAYOUT=<not set>
+libfabric:4110079:1741977414::psm3:core:psmx3_param_get_bool():96<info> gpua040.delta.ncsa.illinois.edu:rank0: variable FI_PSM3_YIELD_MODE=<not set>
+libfabric:4110079:1741977414::psm3:core:psmx3_param_get_bool():96<info> gpua040.delta.ncsa.illinois.edu:rank0: variable FI_PSM3_WAIT_ENABLE=<not set>
+libfabric:4110079:1741977414::core:core:ofi_register_provider():527<info> registering provider: psm3 (400.0)
+libfabric:4110079:1741977414::cxi:core:fi_param_get_():373<info> variable rget_tc=<not set>
+libfabric:4110079:1741977414::cxi:core:fi_param_get_():373<info> variable rdzv_aligned_sw_rget=<not set>
+libfabric:4110079:1741977414::cxi:core:fi_param_get_():373<info> variable rnr_max_timeout_us=<not set>
+libfabric:4110079:1741977414::cxi:core:fi_param_get_():373<info> variable enable_trig_op_limit=<not set>
+libfabric:4110079:1741977414::cxi:core:fi_param_get_():373<info> variable disable_non_inject_msg_idc=<not set>
+libfabric:4110079:1741977414::cxi:core:fi_param_get_():373<info> variable disable_host_register=<not set>
+libfabric:4110079:1741977414::cxi:core:fi_param_get_():373<info> variable odp=<not set>
+libfabric:4110079:1741977414::cxi:core:fi_param_get_():373<info> variable force_odp=<not set>
+libfabric:4110079:1741977414::cxi:core:fi_param_get_():373<info> variable ats=<not set>
+libfabric:4110079:1741977414::cxi:core:fi_param_get_():373<info> variable iotlb=<not set>
+libfabric:4110079:1741977414::cxi:core:fi_param_get_():373<info> variable ats_mlock_mode=<not set>
+libfabric:4110079:1741977414::cxi:core:fi_param_get_():373<info> variable device_name=<not set>
+libfabric:4110079:1741977414::cxi:core:fi_param_get_():373<info> variable telemetry=<not set>
+libfabric:4110079:1741977414::cxi:core:fi_param_get_():373<info> variable telemetry_rgid=<not set>
+libfabric:4110079:1741977414::cxi:core:fi_param_get_():373<info> variable rx_match_mode=<not set>
+libfabric:4110079:1741977414::cxi:core:fi_param_get_():373<info> variable hybrid_preemptive=<not set>
+libfabric:4110079:1741977414::cxi:core:fi_param_get_():373<info> variable hybrid_recv_preemptive=<not set>
+libfabric:4110079:1741977414::cxi:core:fi_param_get_():373<info> variable hybrid_unexpected_msg_preemptive=<not set>
+libfabric:4110079:1741977414::cxi:core:fi_param_get_():373<info> variable hybrid_posted_recv_preemptive=<not set>
+libfabric:4110079:1741977414::cxi:core:fi_param_get_():373<info> variable rdzv_threshold=<not set>
+libfabric:4110079:1741977414::cxi:core:fi_param_get_():373<info> variable rdzv_get_min=<not set>
+libfabric:4110079:1741977414::cxi:core:fi_param_get_():373<info> variable rdzv_eager_size=<not set>
+libfabric:4110079:1741977414::cxi:core:fi_param_get_():373<info> variable oflow_buf_size=<not set>
+libfabric:4110079:1741977414::cxi:core:fi_param_get_():373<info> variable oflow_buf_count=<not set>
+libfabric:4110079:1741977414::cxi:core:fi_param_get_():373<info> variable oflow_buf_min_posted=<not set>
+libfabric:4110079:1741977414::cxi:core:fi_param_get_():373<info> variable oflow_buf_max_cached=<not set>
+libfabric:4110079:1741977414::cxi:core:fi_param_get_():373<info> variable safe_devmem_copy_threshold=<not set>
+libfabric:4110079:1741977414::cxi:core:fi_param_get_():373<info> variable optimized_mrs=<not set>
+libfabric:4110079:1741977414::cxi:core:fi_param_get_():373<info> variable mr_match_events=<not set>
+libfabric:4110079:1741977414::cxi:core:fi_param_get_():373<info> variable prov_key_cache=<not set>
+libfabric:4110079:1741977414::cxi:core:fi_param_get_():373<info> variable llring_mode=<not set>
+libfabric:4110079:1741977414::cxi:core:fi_param_get_():373<info> variable zbcoll_radix=<not set>
+libfabric:4110079:1741977414::cxi:core:fi_param_get_():373<info> variable cq_policy=<not set>
+libfabric:4110079:1741977414::cxi:core:fi_param_get_():373<info> variable default_vni=<not set>
+libfabric:4110079:1741977414::cxi:core:fi_param_get_():373<info> variable eq_ack_batch_size=<not set>
+libfabric:4110079:1741977414::cxi:core:fi_param_get_():373<info> variable msg_lossless=<not set>
+libfabric:4110079:1741977414::cxi:core:fi_param_get_():373<info> variable req_buf_size=<not set>
+libfabric:4110079:1741977414::cxi:core:fi_param_get_():373<info> variable req_buf_min_posted=<not set>
+libfabric:4110079:1741977414::cxi:core:fi_param_get_():373<info> variable req_buf_max_count=<not set>
+libfabric:4110079:1741977414::cxi:core:fi_param_get_():373<info> variable req_buf_max_cached=<not set>
+libfabric:4110079:1741977414::cxi:core:fi_param_get_():373<info> variable fc_retry_usec_delay=<not set>
+libfabric:4110079:1741977414::cxi:core:fi_param_get_():373<info> variable sw_rx_tx_init_max=<not set>
+libfabric:4110079:1741977414::cxi:core:fi_param_get_():373<info> variable ctrl_rx_eq_max_size=<not set>
+libfabric:4110079:1741977414::cxi:core:fi_param_get_():373<info> variable default_cq_size=<not set>
+libfabric:4110079:1741977414::cxi:core:fi_param_get_():373<info> variable disable_cq_hugetlb=<not set>
+libfabric:4110079:1741977414::cxi:core:fi_param_get_():373<info> variable disable_eq_hugetlb=<not set>
+libfabric:4110079:1741977414::cxi:core:fi_param_get_():373<info> variable cq_fill_percent=<not set>
+libfabric:4110079:1741977414::cxi:core:fi_param_get_():373<info> variable coll_job_id=<not set>
+libfabric:4110079:1741977414::cxi:core:fi_param_get_():373<info> variable coll_job_step_id=<not set>
+libfabric:4110079:1741977414::cxi:core:fi_param_get_():373<info> variable coll_fabric_mgr_url=<not set>
+libfabric:4110079:1741977414::cxi:core:fi_param_get_():373<info> variable coll_mcast_token=<not set>
+libfabric:4110079:1741977414::cxi:core:fi_param_get_():373<info> variable coll_use_dma_put=<not set>
+libfabric:4110079:1741977414::cxi:core:fi_param_get_():373<info> variable hwcoll_addrs_per_job=<not set>
+libfabric:4110079:1741977414::cxi:core:fi_param_get_():373<info> variable hwcoll_min_nodes=<not set>
+libfabric:4110079:1741977414::cxi:core:fi_param_get_():373<info> variable coll_retry_usec=<not set>
+libfabric:4110079:1741977414::cxi:core:fi_param_get_():373<info> variable coll_timeout_usec=<not set>
+libfabric:4110079:1741977414::cxi:core:fi_param_get_():373<info> variable coll_fm_timeout_msec=<not set>
+libfabric:4110079:1741977414::cxi:core:fi_param_get_():373<info> variable default_tx_size=<not set>
+libfabric:4110079:1741977414::cxi:core:fi_param_get_():373<info> variable default_rx_size=<not set>
+libfabric:4110079:1741977414::cxi:core:fi_param_get_():373<info> variable disable_hmem_dev_register=<not set>
+libfabric:4110079:1741977414::cxi:core:fi_param_get_():373<info> variable force_ze_hmem_support=<not set>
+libfabric:4110079:1741977414::cxi:core:fi_param_get_():373<info> variable trunc_ok=<not set>
+libfabric:4110079:1741977414::cxi:core:fi_param_get_():373<info> variable rdzv_proto=<not set>
+libfabric:4110079:1741977414::cxi:core:fi_param_get_():373<info> variable mr_cache_events_disable_poll_nsecs=<not set>
+libfabric:4110079:1741977414::cxi:core:fi_param_get_():373<info> variable mr_cache_events_disable_le_poll_nsecs=<not set>
+libfabric:4110079:1741977414::cxi:core:fi_param_get_():373<info> variable force_dev_reg_copy=<not set>
+libfabric:4110079:1741977414::cxi:core:fi_param_get_():373<info> variable mr_target_ordering=<not set>
+libfabric:4110079:1741977414::cxi:fabric:cxip_curl_load_symbols():216<info> gpua040.delta.ncsa.illinois.edu: could not expand '/usr/lib/libcurl.so.4'
+libfabric:4110079:1741977414::cxi:fabric:cxip_nic_get_ss_env_get_vni():23<info> gpua040.delta.ncsa.illinois.edu: SLINGSHOT_VNIS not found
+libfabric:4110079:1741977414::cxi:fabric:cxip_nic_get_best_rgroup_vni():236<info> gpua040.delta.ncsa.illinois.edu: Found (1:1) for cxi0
+libfabric:4110079:1741977414::cxi:fabric:cxip_nic_get_ss_env_get_vni():23<info> gpua040.delta.ncsa.illinois.edu: SLINGSHOT_VNIS not found
+libfabric:4110079:1741977414::cxi:fabric:cxip_nic_get_best_rgroup_vni():236<info> gpua040.delta.ncsa.illinois.edu: Found (1:1) for cxi0
+libfabric:4110079:1741977414::cxi:fabric:cxip_nic_get_ss_env_get_vni():23<info> gpua040.delta.ncsa.illinois.edu: SLINGSHOT_VNIS not found
+libfabric:4110079:1741977414::cxi:fabric:cxip_nic_get_best_rgroup_vni():236<info> gpua040.delta.ncsa.illinois.edu: Found (1:1) for cxi0
+libfabric:4110079:1741977414::cxi:fabric:cxip_nic_get_ss_env_get_vni():23<info> gpua040.delta.ncsa.illinois.edu: SLINGSHOT_VNIS not found
+libfabric:4110079:1741977414::cxi:fabric:cxip_nic_get_best_rgroup_vni():236<info> gpua040.delta.ncsa.illinois.edu: Found (1:1) for cxi0
+libfabric:4110079:1741977414::cxi:fabric:cxip_nic_get_ss_env_get_vni():23<info> gpua040.delta.ncsa.illinois.edu: SLINGSHOT_VNIS not found
+libfabric:4110079:1741977414::cxi:fabric:cxip_nic_get_best_rgroup_vni():236<info> gpua040.delta.ncsa.illinois.edu: Found (1:1) for cxi0
+libfabric:4110079:1741977414::cxi:fabric:cxip_nic_get_ss_env_get_vni():23<info> gpua040.delta.ncsa.illinois.edu: SLINGSHOT_VNIS not found
+libfabric:4110079:1741977414::cxi:fabric:cxip_nic_get_best_rgroup_vni():236<info> gpua040.delta.ncsa.illinois.edu: Found (1:1) for cxi0
+libfabric:4110079:1741977414::cxi:fabric:cxip_nic_get_ss_env_get_vni():23<info> gpua040.delta.ncsa.illinois.edu: SLINGSHOT_VNIS not found
+libfabric:4110079:1741977414::cxi:fabric:cxip_nic_get_best_rgroup_vni():236<info> gpua040.delta.ncsa.illinois.edu: Found (1:1) for cxi0
+libfabric:4110079:1741977414::cxi:fabric:cxip_nic_get_ss_env_get_vni():23<info> gpua040.delta.ncsa.illinois.edu: SLINGSHOT_VNIS not found
+libfabric:4110079:1741977414::cxi:fabric:cxip_nic_get_best_rgroup_vni():236<info> gpua040.delta.ncsa.illinois.edu: Found (1:1) for cxi0
+libfabric:4110079:1741977414::core:core:ofi_register_provider():527<info> registering provider: cxi (0.1)
+libfabric:4110079:1741977414::shm:core:fi_param_get_():373<info> variable sar_threshold=<not set>
+libfabric:4110079:1741977414::shm:core:fi_param_get_():373<info> variable tx_size=<not set>
+libfabric:4110079:1741977414::shm:core:fi_param_get_():373<info> variable rx_size=<not set>
+libfabric:4110079:1741977414::shm:core:fi_param_get_():373<info> variable disable_cma=<not set>
+libfabric:4110079:1741977414::shm:core:fi_param_get_():373<info> variable use_dsa_sar=<not set>
+libfabric:4110079:1741977414::shm:core:fi_param_get_():373<info> variable use_xpmem=<not set>
+libfabric:4110079:1741977414::core:core:ofi_register_provider():527<info> registering provider: shm (201.0)
+libfabric:4110079:1741977414::core:core:ofi_register_provider():527<info> registering provider: sm2 (201.0)
+libfabric:4110079:1741977414::ofi_rxm:core:fi_param_get_():373<info> variable enable_passthru=<not set>
+libfabric:4110079:1741977414::ofi_rxm:core:fi_param_get_():373<info> variable buffer_size=<not set>
+libfabric:4110079:1741977414::ofi_rxm:core:fi_param_get_():373<info> variable tx_size=<not set>
+libfabric:4110079:1741977414::ofi_rxm:core:fi_param_get_():373<info> variable rx_size=<not set>
+libfabric:4110079:1741977414::ofi_rxm:core:fi_param_get_():373<info> variable msg_tx_size=<not set>
+libfabric:4110079:1741977414::ofi_rxm:core:fi_param_get_():373<info> variable msg_rx_size=<not set>
+libfabric:4110079:1741977414::ofi_rxm:core:fi_param_get_():373<info> variable cm_progress_interval=<not set>
+libfabric:4110079:1741977414::ofi_rxm:core:fi_param_get_():373<info> variable cq_eq_fairness=<not set>
+libfabric:4110079:1741977414::ofi_rxm:core:fi_param_get_():373<info> variable data_auto_progress=<not set>
+libfabric:4110079:1741977414::ofi_rxm:core:fi_param_get_():373<info> variable use_rndv_write=<not set>
+libfabric:4110079:1741977414::ofi_rxm:core:fi_param_get_():373<info> variable def_wait_obj=<not set>
+libfabric:4110079:1741977414::ofi_rxm:core:fi_param_get_():373<info> variable def_tcp_wait_obj=<not set>
+libfabric:4110079:1741977414::ofi_rxm:core:fi_param_get_():373<info> variable detect_hmem_iface=<not set>
+libfabric:4110079:1741977414::core:core:ofi_register_provider():527<info> registering provider: ofi_rxm (201.0)
+libfabric:4110079:1741977414::core:core:ofi_register_provider():527<info> registering provider: verbs (201.0)
+libfabric:4110079:1741977414::ofi_mrail:core:fi_param_get_():373<info> variable config=<not set>
+libfabric:4110079:1741977414::ofi_mrail:core:fi_param_get_():373<info> variable addr=<not set>
+libfabric:4110079:1741977414::ofi_mrail:core:fi_param_get_():373<info> variable addr_strc=<not set>
+libfabric:4110079:1741977414::ofi_mrail:core:mrail_parse_env_vars():116<info> unable to read FI_OFI_MRAIL_ADDR env variable
+libfabric:4110079:1741977414::core:core:ofi_register_provider():527<info> registering provider: ofi_mrail (201.0)
+libfabric:4110079:1741977414::ofi_rxd:core:fi_param_get_():373<info> variable spin_count=<not set>
+libfabric:4110079:1741977414::ofi_rxd:core:fi_param_get_():373<info> variable retry=<not set>
+libfabric:4110079:1741977414::ofi_rxd:core:fi_param_get_():373<info> variable max_peers=<not set>
+libfabric:4110079:1741977414::ofi_rxd:core:fi_param_get_():373<info> variable max_unacked=<not set>
+libfabric:4110079:1741977414::core:core:ofi_register_provider():527<info> registering provider: ofi_rxd (201.0)
+libfabric:4110079:1741977414::core:core:ofi_register_provider():527<info> registering provider: efa (201.0)
+libfabric:4110079:1741977414::core:core:ofi_register_provider():527<info> registering provider: udp (201.0)
+libfabric:4110079:1741977414::core:core:ofi_register_provider():527<info> registering provider: sockets (201.0)
+libfabric:4110079:1741977414::tcp:core:fi_param_get_():373<info> variable prov_name=<not set>
+libfabric:4110079:1741977414::tcp:core:fi_param_get_():373<info> variable port_high_range=<not set>
+libfabric:4110079:1741977414::tcp:core:fi_param_get_():373<info> variable port_low_range=<not set>
+libfabric:4110079:1741977414::tcp:core:fi_param_get_():373<info> variable tx_size=<not set>
+libfabric:4110079:1741977414::tcp:core:fi_param_get_():373<info> variable rx_size=<not set>
+libfabric:4110079:1741977414::tcp:core:fi_param_get_():373<info> variable max_inject=<not set>
+libfabric:4110079:1741977414::tcp:core:fi_param_get_():373<info> variable max_saved=<not set>
+libfabric:4110079:1741977414::tcp:core:fi_param_get_():373<info> variable max_saved_size=<not set>
+libfabric:4110079:1741977414::tcp:core:fi_param_get_():373<info> variable max_rx_size=<not set>
+libfabric:4110079:1741977414::tcp:core:fi_param_get_():373<info> variable nodelay=<not set>
+libfabric:4110079:1741977414::tcp:core:fi_param_get_():373<info> variable staging_sbuf_size=<not set>
+libfabric:4110079:1741977414::tcp:core:fi_param_get_():373<info> variable prefetch_rbuf_size=<not set>
+libfabric:4110079:1741977414::tcp:core:fi_param_get_():373<info> variable zerocopy_size=<not set>
+libfabric:4110079:1741977414::tcp:core:fi_param_get_():373<info> variable trace_msg=<not set>
+libfabric:4110079:1741977414::tcp:core:fi_param_get_():373<info> variable disable_auto_progress=<not set>
+libfabric:4110079:1741977414::tcp:core:fi_param_get_():373<info> variable io_uring=<not set>
+libfabric:4110079:1741977414::core:core:ofi_register_provider():527<info> registering provider: tcp (201.0)
+libfabric:4110079:1741977414::core:core:ofi_register_provider():527<info> registering provider: lnx (201.0)
+libfabric:4110079:1741977414::core:core:ofi_register_provider():527<info> registering provider: ofi_hook_perf (201.0)
+libfabric:4110079:1741977414::core:core:ofi_register_provider():527<info> registering provider: ofi_hook_trace (201.0)
+libfabric:4110079:1741977414::core:core:ofi_register_provider():527<info> registering provider: ofi_hook_debug (201.0)
+libfabric:4110079:1741977414::core:core:ofi_register_provider():527<info> registering provider: ofi_hook_hmem (201.0)
+libfabric:4110079:1741977414::core:core:ofi_register_provider():527<info> registering provider: ofi_hook_dmabuf_peer_mem (201.0)
+libfabric:4110079:1741977414::core:core:ofi_register_provider():527<info> registering provider: ofi_hook_noop (201.0)
+libfabric:4110079:1741977414::core:core:ofi_register_provider():527<info> registering provider: off_coll (201.0)
+libfabric:4110079:1741977414::core:core:fi_getinfo_():1394<warn> fi_getinfo: provider efa output empty list
+libfabric:4110080:1741977414::core:core:fi_param_get_():373<info> variable perf_cntr=<not set>
+libfabric:4110080:1741977414::core:core:fi_param_get_():373<info> variable hook=<not set>
+libfabric:4110080:1741977414::core:core:fi_param_get_():373<info> variable hmem=<not set>
+libfabric:4110080:1741977414::core:core:cuda_hmem_verify_devices():572<info> Skipping check for NVIDIA devices with NVML routines
+libfabric:4110080:1741977414::core:core:cuda_hmem_verify_devices():598<info> Number of CUDA devices detected: 1
+libfabric:4110080:1741977414::core:core:cuda_hmem_detect_dmabuf_support():681<info> cuda dmabuf support status: 0
+libfabric:4110080:1741977414::core:core:fi_param_get_():373<info> variable hmem_cuda_use_gdrcopy=<not set>
+libfabric:4110080:1741977414::core:core:ofi_hmem_init():667<info> Hmem iface FI_HMEM_ROCR not supported
+libfabric:4110080:1741977414::core:core:ofi_hmem_init():667<info> Hmem iface FI_HMEM_ZE not supported
+libfabric:4110080:1741977414::core:core:ofi_hmem_init():667<info> Hmem iface FI_HMEM_NEURON not supported
+libfabric:4110080:1741977414::core:core:ofi_hmem_init():667<info> Hmem iface FI_HMEM_SYNAPSEAI not supported
+libfabric:4110080:1741977414::core:core:fi_param_get_():373<info> variable hmem_disable_p2p=<not set>
+libfabric:4110080:1741977414::core:mr:ofi_monitors_init():240<info> Initializing memory monitor uffd
+libfabric:4110080:1741977414::core:mr:ofi_monitors_init():240<info> Initializing memory monitor memhooks
+libfabric:4110080:1741977414::core:mr:ofi_monitors_init():240<info> Initializing memory monitor cuda
+libfabric:4110080:1741977414::core:mr:ofi_monitors_init():240<info> Initializing memory monitor cuda_ipc
+libfabric:4110080:1741977414::core:mr:ofi_monitors_init():240<info> Initializing memory monitor rocr
+libfabric:4110080:1741977414::core:mr:ofi_monitors_init():240<info> Initializing memory monitor rocr_ipc
+libfabric:4110080:1741977414::core:mr:ofi_monitors_init():240<info> Initializing memory monitor xpmem
+libfabric:4110080:1741977414::core:mr:ofi_monitors_init():240<info> Initializing memory monitor ze
+libfabric:4110080:1741977414::core:mr:ofi_monitors_init():240<info> Initializing memory monitor ze_ipc
+libfabric:4110080:1741977414::core:mr:ofi_monitors_init():240<info> Initializing memory monitor import
+libfabric:4110080:1741977414::core:mr:ofi_monitors_init():240<info> Initializing memory monitor kdreg2
+libfabric:4110080:1741977414::core:core:fi_param_get_():373<info> variable mr_cache_max_size=<not set>
+libfabric:4110080:1741977414::core:core:fi_param_get_():373<info> variable mr_cache_max_count=<not set>
+libfabric:4110080:1741977414::core:core:fi_param_get_():373<info> variable mr_cache_monitor=<not set>
+libfabric:4110080:1741977414::core:core:fi_param_get_():373<info> variable mr_cuda_cache_monitor_enabled=<not set>
+libfabric:4110080:1741977414::core:core:fi_param_get_():373<info> variable mr_rocr_cache_monitor_enabled=<not set>
+libfabric:4110080:1741977414::core:core:fi_param_get_():373<info> variable mr_ze_cache_monitor_enabled=<not set>
+libfabric:4110080:1741977414::core:mr:ofi_default_cache_size():67<info> default cache size=2110741088
+libfabric:4110080:1741977414::core:mr:ofi_monitors_init():317<info> Default memory monitor is: memhooks
+libfabric:4110080:1741977414::core:core:fi_param_get_():373<info> variable provider=<not set>
+libfabric:4110080:1741977414::core:core:fi_param_get_():373<info> variable universe_size=<not set>
+libfabric:4110080:1741977414::core:core:fi_param_get_():373<info> variable av_remove_cleanup=<not set>
+libfabric:4110080:1741977414::core:core:fi_param_get_():373<info> variable offload_coll_provider=<not set>
+libfabric:4110080:1741977414::core:core:fi_param_get_():373<info> variable provider_path=<not set>
+libfabric:4110080:1741977414::psm3:core:fi_psm3_ini():898<info> gpua040.delta.ncsa.illinois.edu:rank1: build options: VERSION=400.0=4.0.0.0, HAVE_PSM3_SRC=1, PSM3_CUDA=0
+libfabric:4110080:1741977414::psm3:core:psmx3_param_get_bool():96<info> gpua040.delta.ncsa.illinois.edu:rank1: variable FI_PSM3_NAME_SERVER=<not set>
+libfabric:4110080:1741977414::psm3:core:psmx3_param_get_bool():96<info> gpua040.delta.ncsa.illinois.edu:rank1: variable FI_PSM3_TAGGED_RMA=<not set>
+libfabric:4110080:1741977414::psm3:core:psmx3_param_get_str():126<info> gpua040.delta.ncsa.illinois.edu:rank1: variable FI_PSM3_UUID=<not set>
+libfabric:4110080:1741977414::psm3:core:psmx3_param_get_int():111<info> gpua040.delta.ncsa.illinois.edu:rank1: variable FI_PSM3_DELAY=<not set>
+libfabric:4110080:1741977414::psm3:core:psmx3_param_get_int():111<info> gpua040.delta.ncsa.illinois.edu:rank1: variable FI_PSM3_TIMEOUT=<not set>
+libfabric:4110080:1741977414::psm3:core:psmx3_param_get_int():111<info> gpua040.delta.ncsa.illinois.edu:rank1: variable FI_PSM3_PROG_INTERVAL=<not set>
+libfabric:4110080:1741977414::psm3:core:psmx3_param_get_str():126<info> gpua040.delta.ncsa.illinois.edu:rank1: variable FI_PSM3_PROG_AFFINITY=<not set>
+libfabric:4110080:1741977414::psm3:core:psmx3_param_get_int():111<info> gpua040.delta.ncsa.illinois.edu:rank1: variable FI_PSM3_INJECT_SIZE=<not set>
+libfabric:4110080:1741977414::psm3:core:psmx3_param_get_int():111<info> gpua040.delta.ncsa.illinois.edu:rank1: variable FI_PSM3_LOCK_LEVEL=<not set>
+libfabric:4110080:1741977414::psm3:core:psmx3_param_get_bool():96<info> gpua040.delta.ncsa.illinois.edu:rank1: variable FI_PSM3_LAZY_CONN=<not set>
+libfabric:4110080:1741977414::psm3:core:psmx3_param_get_int():111<info> gpua040.delta.ncsa.illinois.edu:rank1: variable FI_PSM3_CONN_TIMEOUT=<not set>
+libfabric:4110080:1741977414::psm3:core:psmx3_param_get_bool():96<info> gpua040.delta.ncsa.illinois.edu:rank1: variable FI_PSM3_DISCONNECT=<not set>
+libfabric:4110080:1741977414::psm3:core:psmx3_param_get_str():126<info> gpua040.delta.ncsa.illinois.edu:rank1: variable FI_PSM3_TAG_LAYOUT=<not set>
+libfabric:4110080:1741977414::psm3:core:psmx3_param_get_bool():96<info> gpua040.delta.ncsa.illinois.edu:rank1: variable FI_PSM3_YIELD_MODE=<not set>
+libfabric:4110080:1741977414::psm3:core:psmx3_param_get_bool():96<info> gpua040.delta.ncsa.illinois.edu:rank1: variable FI_PSM3_WAIT_ENABLE=<not set>
+libfabric:4110080:1741977414::core:core:ofi_register_provider():527<info> registering provider: psm3 (400.0)
+libfabric:4110080:1741977414::cxi:core:fi_param_get_():373<info> variable rget_tc=<not set>
+libfabric:4110080:1741977414::cxi:core:fi_param_get_():373<info> variable rdzv_aligned_sw_rget=<not set>
+libfabric:4110080:1741977414::cxi:core:fi_param_get_():373<info> variable rnr_max_timeout_us=<not set>
+libfabric:4110080:1741977414::cxi:core:fi_param_get_():373<info> variable enable_trig_op_limit=<not set>
+libfabric:4110080:1741977414::cxi:core:fi_param_get_():373<info> variable disable_non_inject_msg_idc=<not set>
+libfabric:4110080:1741977414::cxi:core:fi_param_get_():373<info> variable disable_host_register=<not set>
+libfabric:4110080:1741977414::cxi:core:fi_param_get_():373<info> variable odp=<not set>
+libfabric:4110080:1741977414::cxi:core:fi_param_get_():373<info> variable force_odp=<not set>
+libfabric:4110080:1741977414::cxi:core:fi_param_get_():373<info> variable ats=<not set>
+libfabric:4110080:1741977414::cxi:core:fi_param_get_():373<info> variable iotlb=<not set>
+libfabric:4110080:1741977414::cxi:core:fi_param_get_():373<info> variable ats_mlock_mode=<not set>
+libfabric:4110080:1741977414::cxi:core:fi_param_get_():373<info> variable device_name=<not set>
+libfabric:4110080:1741977414::cxi:core:fi_param_get_():373<info> variable telemetry=<not set>
+libfabric:4110080:1741977414::cxi:core:fi_param_get_():373<info> variable telemetry_rgid=<not set>
+libfabric:4110080:1741977414::cxi:core:fi_param_get_():373<info> variable rx_match_mode=<not set>
+libfabric:4110080:1741977414::cxi:core:fi_param_get_():373<info> variable hybrid_preemptive=<not set>
+libfabric:4110080:1741977414::cxi:core:fi_param_get_():373<info> variable hybrid_recv_preemptive=<not set>
+libfabric:4110080:1741977414::cxi:core:fi_param_get_():373<info> variable hybrid_unexpected_msg_preemptive=<not set>
+libfabric:4110080:1741977414::cxi:core:fi_param_get_():373<info> variable hybrid_posted_recv_preemptive=<not set>
+libfabric:4110080:1741977414::cxi:core:fi_param_get_():373<info> variable rdzv_threshold=<not set>
+libfabric:4110080:1741977414::cxi:core:fi_param_get_():373<info> variable rdzv_get_min=<not set>
+libfabric:4110080:1741977414::cxi:core:fi_param_get_():373<info> variable rdzv_eager_size=<not set>
+libfabric:4110080:1741977414::cxi:core:fi_param_get_():373<info> variable oflow_buf_size=<not set>
+libfabric:4110080:1741977414::cxi:core:fi_param_get_():373<info> variable oflow_buf_count=<not set>
+libfabric:4110080:1741977414::cxi:core:fi_param_get_():373<info> variable oflow_buf_min_posted=<not set>
+libfabric:4110080:1741977414::cxi:core:fi_param_get_():373<info> variable oflow_buf_max_cached=<not set>
+libfabric:4110080:1741977414::cxi:core:fi_param_get_():373<info> variable safe_devmem_copy_threshold=<not set>
+libfabric:4110080:1741977414::cxi:core:fi_param_get_():373<info> variable optimized_mrs=<not set>
+libfabric:4110080:1741977414::cxi:core:fi_param_get_():373<info> variable mr_match_events=<not set>
+libfabric:4110080:1741977414::cxi:core:fi_param_get_():373<info> variable prov_key_cache=<not set>
+libfabric:4110080:1741977414::cxi:core:fi_param_get_():373<info> variable llring_mode=<not set>
+libfabric:4110080:1741977414::cxi:core:fi_param_get_():373<info> variable zbcoll_radix=<not set>
+libfabric:4110080:1741977414::cxi:core:fi_param_get_():373<info> variable cq_policy=<not set>
+libfabric:4110080:1741977414::cxi:core:fi_param_get_():373<info> variable default_vni=<not set>
+libfabric:4110080:1741977414::cxi:core:fi_param_get_():373<info> variable eq_ack_batch_size=<not set>
+libfabric:4110080:1741977414::cxi:core:fi_param_get_():373<info> variable msg_lossless=<not set>
+libfabric:4110080:1741977414::cxi:core:fi_param_get_():373<info> variable req_buf_size=<not set>
+libfabric:4110080:1741977414::cxi:core:fi_param_get_():373<info> variable req_buf_min_posted=<not set>
+libfabric:4110080:1741977414::cxi:core:fi_param_get_():373<info> variable req_buf_max_count=<not set>
+libfabric:4110080:1741977414::cxi:core:fi_param_get_():373<info> variable req_buf_max_cached=<not set>
+libfabric:4110080:1741977414::cxi:core:fi_param_get_():373<info> variable fc_retry_usec_delay=<not set>
+libfabric:4110080:1741977414::cxi:core:fi_param_get_():373<info> variable sw_rx_tx_init_max=<not set>
+libfabric:4110080:1741977414::cxi:core:fi_param_get_():373<info> variable ctrl_rx_eq_max_size=<not set>
+libfabric:4110080:1741977414::cxi:core:fi_param_get_():373<info> variable default_cq_size=<not set>
+libfabric:4110080:1741977414::cxi:core:fi_param_get_():373<info> variable disable_cq_hugetlb=<not set>
+libfabric:4110080:1741977414::cxi:core:fi_param_get_():373<info> variable disable_eq_hugetlb=<not set>
+libfabric:4110080:1741977414::cxi:core:fi_param_get_():373<info> variable cq_fill_percent=<not set>
+libfabric:4110080:1741977414::cxi:core:fi_param_get_():373<info> variable coll_job_id=<not set>
+libfabric:4110080:1741977414::cxi:core:fi_param_get_():373<info> variable coll_job_step_id=<not set>
+libfabric:4110080:1741977414::cxi:core:fi_param_get_():373<info> variable coll_fabric_mgr_url=<not set>
+libfabric:4110080:1741977414::cxi:core:fi_param_get_():373<info> variable coll_mcast_token=<not set>
+libfabric:4110080:1741977414::cxi:core:fi_param_get_():373<info> variable coll_use_dma_put=<not set>
+libfabric:4110080:1741977414::cxi:core:fi_param_get_():373<info> variable hwcoll_addrs_per_job=<not set>
+libfabric:4110080:1741977414::cxi:core:fi_param_get_():373<info> variable hwcoll_min_nodes=<not set>
+libfabric:4110080:1741977414::cxi:core:fi_param_get_():373<info> variable coll_retry_usec=<not set>
+libfabric:4110080:1741977414::cxi:core:fi_param_get_():373<info> variable coll_timeout_usec=<not set>
+libfabric:4110080:1741977414::cxi:core:fi_param_get_():373<info> variable coll_fm_timeout_msec=<not set>
+libfabric:4110080:1741977414::cxi:core:fi_param_get_():373<info> variable default_tx_size=<not set>
+libfabric:4110080:1741977414::cxi:core:fi_param_get_():373<info> variable default_rx_size=<not set>
+libfabric:4110080:1741977414::cxi:core:fi_param_get_():373<info> variable disable_hmem_dev_register=<not set>
+libfabric:4110080:1741977414::cxi:core:fi_param_get_():373<info> variable force_ze_hmem_support=<not set>
+libfabric:4110080:1741977414::cxi:core:fi_param_get_():373<info> variable trunc_ok=<not set>
+libfabric:4110080:1741977414::cxi:core:fi_param_get_():373<info> variable rdzv_proto=<not set>
+libfabric:4110080:1741977414::cxi:core:fi_param_get_():373<info> variable mr_cache_events_disable_poll_nsecs=<not set>
+libfabric:4110080:1741977414::cxi:core:fi_param_get_():373<info> variable mr_cache_events_disable_le_poll_nsecs=<not set>
+libfabric:4110080:1741977414::cxi:core:fi_param_get_():373<info> variable force_dev_reg_copy=<not set>
+libfabric:4110080:1741977414::cxi:core:fi_param_get_():373<info> variable mr_target_ordering=<not set>
+libfabric:4110080:1741977414::cxi:fabric:cxip_curl_load_symbols():216<info> gpua040.delta.ncsa.illinois.edu: could not expand '/usr/lib/libcurl.so.4'
+libfabric:4110080:1741977414::cxi:fabric:cxip_nic_get_ss_env_get_vni():23<info> gpua040.delta.ncsa.illinois.edu: SLINGSHOT_VNIS not found
+libfabric:4110080:1741977414::cxi:fabric:cxip_nic_get_best_rgroup_vni():236<info> gpua040.delta.ncsa.illinois.edu: Found (1:1) for cxi0
+libfabric:4110080:1741977414::cxi:fabric:cxip_nic_get_ss_env_get_vni():23<info> gpua040.delta.ncsa.illinois.edu: SLINGSHOT_VNIS not found
+libfabric:4110080:1741977414::cxi:fabric:cxip_nic_get_best_rgroup_vni():236<info> gpua040.delta.ncsa.illinois.edu: Found (1:1) for cxi0
+libfabric:4110080:1741977414::cxi:fabric:cxip_nic_get_ss_env_get_vni():23<info> gpua040.delta.ncsa.illinois.edu: SLINGSHOT_VNIS not found
+libfabric:4110080:1741977414::cxi:fabric:cxip_nic_get_best_rgroup_vni():236<info> gpua040.delta.ncsa.illinois.edu: Found (1:1) for cxi0
+libfabric:4110080:1741977414::cxi:fabric:cxip_nic_get_ss_env_get_vni():23<info> gpua040.delta.ncsa.illinois.edu: SLINGSHOT_VNIS not found
+libfabric:4110080:1741977414::cxi:fabric:cxip_nic_get_best_rgroup_vni():236<info> gpua040.delta.ncsa.illinois.edu: Found (1:1) for cxi0
+libfabric:4110080:1741977414::cxi:fabric:cxip_nic_get_ss_env_get_vni():23<info> gpua040.delta.ncsa.illinois.edu: SLINGSHOT_VNIS not found
+libfabric:4110080:1741977414::cxi:fabric:cxip_nic_get_best_rgroup_vni():236<info> gpua040.delta.ncsa.illinois.edu: Found (1:1) for cxi0
+libfabric:4110080:1741977414::cxi:fabric:cxip_nic_get_ss_env_get_vni():23<info> gpua040.delta.ncsa.illinois.edu: SLINGSHOT_VNIS not found
+libfabric:4110080:1741977414::cxi:fabric:cxip_nic_get_best_rgroup_vni():236<info> gpua040.delta.ncsa.illinois.edu: Found (1:1) for cxi0
+libfabric:4110080:1741977414::cxi:fabric:cxip_nic_get_ss_env_get_vni():23<info> gpua040.delta.ncsa.illinois.edu: SLINGSHOT_VNIS not found
+libfabric:4110080:1741977414::cxi:fabric:cxip_nic_get_best_rgroup_vni():236<info> gpua040.delta.ncsa.illinois.edu: Found (1:1) for cxi0
+libfabric:4110080:1741977414::cxi:fabric:cxip_nic_get_ss_env_get_vni():23<info> gpua040.delta.ncsa.illinois.edu: SLINGSHOT_VNIS not found
+libfabric:4110080:1741977414::cxi:fabric:cxip_nic_get_best_rgroup_vni():236<info> gpua040.delta.ncsa.illinois.edu: Found (1:1) for cxi0
+libfabric:4110080:1741977414::core:core:ofi_register_provider():527<info> registering provider: cxi (0.1)
+libfabric:4110080:1741977414::shm:core:fi_param_get_():373<info> variable sar_threshold=<not set>
+libfabric:4110080:1741977414::shm:core:fi_param_get_():373<info> variable tx_size=<not set>
+libfabric:4110080:1741977414::shm:core:fi_param_get_():373<info> variable rx_size=<not set>
+libfabric:4110080:1741977414::shm:core:fi_param_get_():373<info> variable disable_cma=<not set>
+libfabric:4110080:1741977414::shm:core:fi_param_get_():373<info> variable use_dsa_sar=<not set>
+libfabric:4110080:1741977414::shm:core:fi_param_get_():373<info> variable use_xpmem=<not set>
+libfabric:4110080:1741977414::core:core:ofi_register_provider():527<info> registering provider: shm (201.0)
+libfabric:4110080:1741977414::core:core:ofi_register_provider():527<info> registering provider: sm2 (201.0)
+libfabric:4110080:1741977414::ofi_rxm:core:fi_param_get_():373<info> variable enable_passthru=<not set>
+libfabric:4110080:1741977414::ofi_rxm:core:fi_param_get_():373<info> variable buffer_size=<not set>
+libfabric:4110080:1741977414::ofi_rxm:core:fi_param_get_():373<info> variable tx_size=<not set>
+libfabric:4110080:1741977414::ofi_rxm:core:fi_param_get_():373<info> variable rx_size=<not set>
+libfabric:4110080:1741977414::ofi_rxm:core:fi_param_get_():373<info> variable msg_tx_size=<not set>
+libfabric:4110080:1741977414::ofi_rxm:core:fi_param_get_():373<info> variable msg_rx_size=<not set>
+libfabric:4110080:1741977414::ofi_rxm:core:fi_param_get_():373<info> variable cm_progress_interval=<not set>
+libfabric:4110080:1741977414::ofi_rxm:core:fi_param_get_():373<info> variable cq_eq_fairness=<not set>
+libfabric:4110080:1741977414::ofi_rxm:core:fi_param_get_():373<info> variable data_auto_progress=<not set>
+libfabric:4110080:1741977414::ofi_rxm:core:fi_param_get_():373<info> variable use_rndv_write=<not set>
+libfabric:4110080:1741977414::ofi_rxm:core:fi_param_get_():373<info> variable def_wait_obj=<not set>
+libfabric:4110080:1741977414::ofi_rxm:core:fi_param_get_():373<info> variable def_tcp_wait_obj=<not set>
+libfabric:4110080:1741977414::ofi_rxm:core:fi_param_get_():373<info> variable detect_hmem_iface=<not set>
+libfabric:4110080:1741977414::core:core:ofi_register_provider():527<info> registering provider: ofi_rxm (201.0)
+libfabric:4110080:1741977414::core:core:ofi_register_provider():527<info> registering provider: verbs (201.0)
+libfabric:4110080:1741977414::ofi_mrail:core:fi_param_get_():373<info> variable config=<not set>
+libfabric:4110080:1741977414::ofi_mrail:core:fi_param_get_():373<info> variable addr=<not set>
+libfabric:4110080:1741977414::ofi_mrail:core:fi_param_get_():373<info> variable addr_strc=<not set>
+libfabric:4110080:1741977414::ofi_mrail:core:mrail_parse_env_vars():116<info> unable to read FI_OFI_MRAIL_ADDR env variable
+libfabric:4110080:1741977414::core:core:ofi_register_provider():527<info> registering provider: ofi_mrail (201.0)
+libfabric:4110080:1741977414::ofi_rxd:core:fi_param_get_():373<info> variable spin_count=<not set>
+libfabric:4110080:1741977414::ofi_rxd:core:fi_param_get_():373<info> variable retry=<not set>
+libfabric:4110080:1741977414::ofi_rxd:core:fi_param_get_():373<info> variable max_peers=<not set>
+libfabric:4110080:1741977414::ofi_rxd:core:fi_param_get_():373<info> variable max_unacked=<not set>
+libfabric:4110080:1741977414::core:core:ofi_register_provider():527<info> registering provider: ofi_rxd (201.0)
+libfabric:4110080:1741977414::core:core:ofi_register_provider():527<info> registering provider: efa (201.0)
+libfabric:4110080:1741977414::core:core:ofi_register_provider():527<info> registering provider: udp (201.0)
+libfabric:4110080:1741977414::core:core:ofi_register_provider():527<info> registering provider: sockets (201.0)
+libfabric:4110080:1741977414::tcp:core:fi_param_get_():373<info> variable prov_name=<not set>
+libfabric:4110080:1741977414::tcp:core:fi_param_get_():373<info> variable port_high_range=<not set>
+libfabric:4110080:1741977414::tcp:core:fi_param_get_():373<info> variable port_low_range=<not set>
+libfabric:4110080:1741977414::tcp:core:fi_param_get_():373<info> variable tx_size=<not set>
+libfabric:4110080:1741977414::tcp:core:fi_param_get_():373<info> variable rx_size=<not set>
+libfabric:4110080:1741977414::tcp:core:fi_param_get_():373<info> variable max_inject=<not set>
+libfabric:4110080:1741977414::tcp:core:fi_param_get_():373<info> variable max_saved=<not set>
+libfabric:4110080:1741977414::tcp:core:fi_param_get_():373<info> variable max_saved_size=<not set>
+libfabric:4110080:1741977414::tcp:core:fi_param_get_():373<info> variable max_rx_size=<not set>
+libfabric:4110080:1741977414::tcp:core:fi_param_get_():373<info> variable nodelay=<not set>
+libfabric:4110080:1741977414::tcp:core:fi_param_get_():373<info> variable staging_sbuf_size=<not set>
+libfabric:4110080:1741977414::tcp:core:fi_param_get_():373<info> variable prefetch_rbuf_size=<not set>
+libfabric:4110080:1741977414::tcp:core:fi_param_get_():373<info> variable zerocopy_size=<not set>
+libfabric:4110080:1741977414::tcp:core:fi_param_get_():373<info> variable trace_msg=<not set>
+libfabric:4110080:1741977414::tcp:core:fi_param_get_():373<info> variable disable_auto_progress=<not set>
+libfabric:4110080:1741977414::tcp:core:fi_param_get_():373<info> variable io_uring=<not set>
+libfabric:4110080:1741977414::core:core:ofi_register_provider():527<info> registering provider: tcp (201.0)
+libfabric:4110080:1741977414::core:core:ofi_register_provider():527<info> registering provider: lnx (201.0)
+libfabric:4110080:1741977414::core:core:ofi_register_provider():527<info> registering provider: ofi_hook_perf (201.0)
+libfabric:4110080:1741977414::core:core:ofi_register_provider():527<info> registering provider: ofi_hook_trace (201.0)
+libfabric:4110080:1741977414::core:core:ofi_register_provider():527<info> registering provider: ofi_hook_debug (201.0)
+libfabric:4110080:1741977414::core:core:ofi_register_provider():527<info> registering provider: ofi_hook_hmem (201.0)
+libfabric:4110080:1741977414::core:core:ofi_register_provider():527<info> registering provider: ofi_hook_dmabuf_peer_mem (201.0)
+libfabric:4110080:1741977414::core:core:ofi_register_provider():527<info> registering provider: ofi_hook_noop (201.0)
+libfabric:4110080:1741977414::core:core:ofi_register_provider():527<info> registering provider: off_coll (201.0)
+libfabric:4110080:1741977414::core:core:fi_getinfo_():1394<warn> fi_getinfo: provider efa output empty list
+libfabric:4110079:1741977414::verbs:core:fi_param_get_():373<info> variable tx_size=<not set>
+libfabric:4110079:1741977414::verbs:core:fi_param_get_():373<info> variable rx_size=<not set>
+libfabric:4110079:1741977414::verbs:core:fi_param_get_():373<info> variable tx_iov_limit=<not set>
+libfabric:4110079:1741977414::verbs:core:fi_param_get_():373<info> variable rx_iov_limit=<not set>
+libfabric:4110079:1741977414::verbs:core:fi_param_get_():373<info> variable inline_size=<not set>
+libfabric:4110079:1741977414::verbs:core:fi_param_get_():373<info> variable min_rnr_timer=<not set>
+libfabric:4110079:1741977414::verbs:core:fi_param_get_():373<info> variable use_odp=<not set>
+libfabric:4110079:1741977414::verbs:core:fi_param_get_():373<info> variable prefer_xrc=<not set>
+libfabric:4110079:1741977414::verbs:core:fi_param_get_():373<info> variable xrcd_filename=<not set>
+libfabric:4110079:1741977414::verbs:core:fi_param_get_():373<info> variable cqread_bunch_size=<not set>
+libfabric:4110079:1741977414::verbs:core:fi_param_get_():373<info> variable gid_idx=<not set>
+libfabric:4110079:1741977414::verbs:core:fi_param_get_():373<info> variable device_name=<not set>
+libfabric:4110079:1741977414::verbs:core:vrb_read_params():737<info> dmabuf support is disabled
+libfabric:4110079:1741977414::verbs:core:fi_param_get_():373<info> variable iface=<not set>
+libfabric:4110079:1741977414::verbs:core:fi_param_get_():373<info> variable dgram_use_name_server=<not set>
+libfabric:4110079:1741977414::verbs:core:fi_param_get_():373<info> variable dgram_name_server_port=<not set>
+libfabric:4110079:1741977414::verbs:fabric:vrb_init_info():1388<info> no RDMA devices found
+libfabric:4110079:1741977414::core:core:fi_getinfo_():1387<info> fi_getinfo: provider verbs returned -61 (No data available)
+libfabric:4110079:1741977414::cxi:core:ofi_check_info():1110<info> Unsupported capabilities
+libfabric:4110079:1741977414::cxi:core:ofi_check_info():1111<info> Supported: FI_MSG, FI_RMA, FI_TAGGED, FI_ATOMIC, FI_COLLECTIVE, FI_READ, FI_WRITE, FI_RECV, FI_SEND, FI_REMOTE_READ, FI_REMOTE_WRITE, FI_MULTI_RECV, FI_TRIGGER, FI_FENCE, FI_SOURCE_ERR, FI_LOCAL_COMM, FI_REMOTE_COMM, FI_RMA_EVENT, FI_SOURCE, FI_NAMED_RX_CTX, FI_AV_USER_ID, FI_PEER, FI_HMEM
+libfabric:4110079:1741977414::cxi:core:ofi_check_info():1111<info> Requested: FI_MSG, FI_TAGGED, FI_LOCAL_COMM, FI_REMOTE_COMM, FI_DIRECTED_RECV
+libfabric:4110079:1741977414::cxi:core:ofi_check_info():1110<info> Unsupported capabilities
+libfabric:4110079:1741977414::cxi:core:ofi_check_info():1111<info> Supported: FI_MSG, FI_RMA, FI_TAGGED, FI_ATOMIC, FI_COLLECTIVE, FI_READ, FI_WRITE, FI_RECV, FI_SEND, FI_REMOTE_READ, FI_REMOTE_WRITE, FI_MULTI_RECV, FI_TRIGGER, FI_FENCE, FI_SOURCE_ERR, FI_LOCAL_COMM, FI_REMOTE_COMM, FI_RMA_EVENT, FI_SOURCE, FI_NAMED_RX_CTX, FI_AV_USER_ID, FI_PEER, FI_HMEM
+libfabric:4110079:1741977414::cxi:core:ofi_check_info():1111<info> Requested: FI_MSG, FI_TAGGED, FI_LOCAL_COMM, FI_REMOTE_COMM, FI_DIRECTED_RECV
+libfabric:4110079:1741977414::cxi:core:ofi_check_rx_attr():887<info> msg_order not supported
+libfabric:4110079:1741977414::cxi:core:ofi_check_rx_attr():889<info> Supported: FI_ORDER_WAW, FI_ORDER_RMA_RAR, FI_ORDER_RMA_WAW, FI_ORDER_ATOMIC_RAR, FI_ORDER_ATOMIC_WAW
+libfabric:4110079:1741977414::cxi:core:ofi_check_rx_attr():889<info> Requested: FI_ORDER_SAS
+libfabric:4110079:1741977414::cxi:core:ofi_check_rx_attr():887<info> msg_order not supported
+libfabric:4110079:1741977414::cxi:core:ofi_check_rx_attr():889<info> Supported: FI_ORDER_WAW, FI_ORDER_RMA_RAR, FI_ORDER_RMA_WAW, FI_ORDER_ATOMIC_RAR, FI_ORDER_ATOMIC_WAW
+libfabric:4110079:1741977414::cxi:core:ofi_check_rx_attr():889<info> Requested: FI_ORDER_SAS
+libfabric:4110079:1741977414::cxi:core:ofi_check_rx_attr():887<info> msg_order not supported
+libfabric:4110079:1741977414::cxi:core:ofi_check_rx_attr():889<info> Supported: FI_ORDER_WAW, FI_ORDER_RMA_RAR, FI_ORDER_RMA_WAW, FI_ORDER_ATOMIC_RAR, FI_ORDER_ATOMIC_WAW
+libfabric:4110079:1741977414::cxi:core:ofi_check_rx_attr():889<info> Requested: FI_ORDER_SAS
+libfabric:4110079:1741977414::cxi:core:ofi_check_rx_attr():887<info> msg_order not supported
+libfabric:4110079:1741977414::cxi:core:ofi_check_rx_attr():889<info> Supported: FI_ORDER_WAW, FI_ORDER_RMA_RAR, FI_ORDER_RMA_WAW, FI_ORDER_ATOMIC_RAR, FI_ORDER_ATOMIC_WAW
+libfabric:4110079:1741977414::cxi:core:ofi_check_rx_attr():889<info> Requested: FI_ORDER_SAS
+libfabric:4110079:1741977414::cxi:fabric:cxip_nic_get_ss_env_get_vni():23<info> gpua040.delta.ncsa.illinois.edu: SLINGSHOT_VNIS not found
+libfabric:4110079:1741977414::cxi:fabric:cxip_nic_get_best_rgroup_vni():236<info> gpua040.delta.ncsa.illinois.edu: Found (1:1) for cxi0
+libfabric:4110079:1741977414::cxi:fabric:cxip_nic_get_ss_env_get_vni():23<info> gpua040.delta.ncsa.illinois.edu: SLINGSHOT_VNIS not found
+libfabric:4110079:1741977414::cxi:fabric:cxip_nic_get_best_rgroup_vni():236<info> gpua040.delta.ncsa.illinois.edu: Found (1:1) for cxi0
+libfabric:4110079:1741977414::psm3:core:psmx3_getinfo():686<info> gpua040.delta.ncsa.illinois.edu:rank0: 
+libfabric:4110079:1741977414::psm3:core:psmx3_init_prov_info():479<info> gpua040.delta.ncsa.illinois.edu:rank0: TAG60 instance included
+libfabric:4110079:1741977414::psm3:core:psmx3_init_lib():380<info> gpua040.delta.ncsa.illinois.edu:rank0: PSM3 header version = (3, 0)
+libfabric:4110079:1741977414::psm3:core:psmx3_init_lib():382<info> gpua040.delta.ncsa.illinois.edu:rank0: PSM3 library version = (3, 0)
+libfabric:4110079:1741977414::psm3:core:psmx3_init_lib():385<info> gpua040.delta.ncsa.illinois.edu:rank0: PSM3 multi-ep feature enabled.
+libfabric:4110079:1741977414::psm3:core:psmx3_update_hfi_info():459<warn> gpua040.delta.ncsa.illinois.edu:rank0: NIC unit_id 0 STATE = INACTIVE
+libfabric:4110079:1741977414::psm3:core:psmx3_update_hfi_info():459<warn> gpua040.delta.ncsa.illinois.edu:rank0: NIC unit_id 1 STATE = INACTIVE
+libfabric:4110079:1741977414::psm3:core:psmx3_update_hfi_info():459<warn> gpua040.delta.ncsa.illinois.edu:rank0: NIC unit_id 2 STATE = INACTIVE
+libfabric:4110079:1741977414::psm3:core:psmx3_update_hfi_info():459<warn> gpua040.delta.ncsa.illinois.edu:rank0: NIC unit_id 3 STATE = INACTIVE
+libfabric:4110079:1741977414::psm3:core:psmx3_update_hfi_info():459<warn> gpua040.delta.ncsa.illinois.edu:rank0: NIC unit_id 4 STATE = INACTIVE
+libfabric:4110079:1741977414::psm3:core:psmx3_update_hfi_info():459<warn> gpua040.delta.ncsa.illinois.edu:rank0: NIC unit_id 7 STATE = INACTIVE
+libfabric:4110079:1741977414::psm3:core:psmx3_update_hfi_info():533<info> gpua040.delta.ncsa.illinois.edu:rank0: psm3 units: total 8, reported 2, active 2
+libfabric:4110079:1741977414::psm3:core:psmx3_update_hfi_info():543<info> gpua040.delta.ncsa.illinois.edu:rank0: Tx/Rx contexts: 64 allowed per process.
+libfabric:4110079:1741977414::psm3:core:psmx3_update_prov_info():587<info> gpua040.delta.ncsa.illinois.edu:rank0: Using inject_size=64 based on FI_PSM3_INJECT_SIZE=64 with max 16000
+libfabric:4110079:1741977414::psm3:core:psmx3_alter_prov_info():766<info> gpua040.delta.ncsa.illinois.edu:rank0: 3 instances available, 3 with CQ data flag set
+libfabric:4110079:1741977414::psm3:core:psmx3_get_link_speed():561<warn> gpua040.delta.ncsa.illinois.edu:rank0: Failed to query link_attr (speed) for unit -1/0: (null)
+libfabric:4110079:1741977414::psm3:core:psmx3_get_link_speed():561<warn> gpua040.delta.ncsa.illinois.edu:rank0: Failed to query link_attr (speed) for unit 5/0: hsn0
+libfabric:4110079:1741977414::psm3:core:psmx3_update_nic_info():604<warn> gpua040.delta.ncsa.illinois.edu:rank0: Failed to query bus_attr (pci bus) for unit 6
+libfabric:4110079:1741977414::ofi_rxm:core:fi_param_get_():373<info> variable use_srx=<not set>
+libfabric:4110079:1741977414:ofi_rxm:core:core:fi_getinfo_():1387<info> fi_getinfo: provider verbs returned -61 (No data available)
+libfabric:4110079:1741977414:ofi_rxm:core:core:ofi_layering_ok():1266<info> Provider ofi_rxm is excluded
+libfabric:4110079:1741977414:ofi_rxm:core:core:ofi_layering_ok():1277<info> Need core provider, skipping ofi_rxd
+libfabric:4110079:1741977414:ofi_rxm:core:core:ofi_layering_ok():1277<info> Need core provider, skipping ofi_mrail
+libfabric:4110079:1741977414:ofi_rxm:core:core:ofi_layering_ok():1277<info> Need core provider, skipping lnx
+libfabric:4110079:1741977414::ofi_rxm:core:fi_param_get_():373<info> variable use_srx=<not set>
+libfabric:4110079:1741977414:ofi_rxm:core:core:ofi_layering_ok():1266<info> Provider ofi_rxm is excluded
+libfabric:4110079:1741977414:ofi_rxm:core:core:ofi_layering_ok():1277<info> Need core provider, skipping ofi_rxd
+libfabric:4110079:1741977414:ofi_rxm:tcp:core:ofi_check_rx_attr():908<info> size is greater than supported
+libfabric:4110079:1741977414:ofi_rxm:tcp:core:ofi_check_rx_attr():909<info> Supported: 1024
+libfabric:4110079:1741977414:ofi_rxm:tcp:core:ofi_check_rx_attr():909<info> Requested: 4096
+libfabric:4110079:1741977414:ofi_rxm:tcp:core:ofi_check_ep_type():707<info> unsupported endpoint type
+libfabric:4110079:1741977414:ofi_rxm:tcp:core:ofi_check_ep_type():708<info> Supported: FI_EP_RDM
+libfabric:4110079:1741977414:ofi_rxm:tcp:core:ofi_check_ep_type():708<info> Requested: FI_EP_MSG
+libfabric:4110079:1741977414:ofi_rxm:tcp:core:fi_param_get_():373<info> variable iface=<not set>
+libfabric:4110079:1741977414:ofi_rxm:tcp:core:ofi_get_list_of_addr():2130<info> Available addr: 172.28.23.40, iface name: eth1, speed: 1000
+libfabric:4110079:1741977414:ofi_rxm:tcp:core:ofi_get_list_of_addr():2130<info> Available addr: 172.28.86.40, iface name: hsn0, speed: 200000
+libfabric:4110079:1741977414:ofi_rxm:tcp:core:ofi_get_list_of_addr():2130<info> Available addr: 141.142.254.40, iface name: hsn0.561, speed: 200000
+libfabric:4110079:1741977414:ofi_rxm:tcp:core:ofi_get_list_of_addr():2130<info> Available addr: fe80::e19b:191f:55a3:e6fe, iface name: eth1, speed: 1000
+libfabric:4110079:1741977414:ofi_rxm:tcp:core:ofi_get_list_of_addr():2130<info> Available addr: fe80::8c81:a177:36f7:733d, iface name: hsn0, speed: 200000
+libfabric:4110079:1741977414:ofi_rxm:tcp:core:ofi_get_list_of_addr():2130<info> Available addr: fe80::f5be:56d3:8f95:1a6f, iface name: hsn0.561, speed: 200000
+libfabric:4110079:1741977414:ofi_rxm:tcp:core:ofi_insert_loopback_addr():1960<info> available addr: : fi_sockaddr_in://127.0.0.1:0
+libfabric:4110079:1741977414:ofi_rxm:tcp:core:ofi_insert_loopback_addr():1975<info> available addr: : fi_sockaddr_in6://[::1]:0
+libfabric:4110079:1741977414:ofi_rxm:tcp:core:util_getinfo_ifs():404<info> Chosen addr for using: 141.142.254.40, speed 200000
+libfabric:4110079:1741977414:ofi_rxm:core:core:ofi_layering_ok():1277<info> Need core provider, skipping ofi_mrail
+libfabric:4110079:1741977414:ofi_rxm:core:core:ofi_layering_ok():1277<info> Need core provider, skipping lnx
+libfabric:4110079:1741977414::ofi_rxm:core:fi_param_get_():373<info> variable use_srx=<not set>
+libfabric:4110079:1741977414:ofi_rxm:core:core:ofi_layering_ok():1283<info> Skipping util;efa layering
+libfabric:4110079:1741977414:ofi_rxm:core:core:fi_getinfo_():1387<info> fi_getinfo: provider verbs returned -61 (No data available)
+libfabric:4110079:1741977414:ofi_rxm:core:core:ofi_layering_ok():1283<info> Skipping util;cxi layering
+libfabric:4110079:1741977414:ofi_rxm:core:core:ofi_layering_ok():1283<info> Skipping util;psm3 layering
+libfabric:4110079:1741977414:ofi_rxm:core:core:ofi_layering_ok():1277<info> Need core provider, skipping ofi_rxm
+libfabric:4110079:1741977414:ofi_rxm:core:core:ofi_layering_ok():1277<info> Need core provider, skipping ofi_rxd
+libfabric:4110079:1741977414:ofi_rxm:core:core:ofi_layering_ok():1283<info> Skipping util;shm layering
+libfabric:4110079:1741977414:ofi_rxm:udp:core:ofi_check_ep_type():707<info> unsupported endpoint type
+libfabric:4110079:1741977414:ofi_rxm:udp:core:ofi_check_ep_type():708<info> Supported: FI_EP_DGRAM
+libfabric:4110079:1741977414:ofi_rxm:udp:core:ofi_check_ep_type():708<info> Requested: FI_EP_MSG
+libfabric:4110079:1741977414:ofi_rxm:core:core:fi_getinfo_():1387<info> fi_getinfo: provider udp returned -61 (No data available)
+libfabric:4110079:1741977414:ofi_rxm:tcp:core:ofi_check_ep_attr():792<info> Provider requires use of shared rx context
+libfabric:4110079:1741977414:ofi_rxm:tcp:core:ofi_check_ep_type():707<info> unsupported endpoint type
+libfabric:4110079:1741977414:ofi_rxm:tcp:core:ofi_check_ep_type():708<info> Supported: FI_EP_RDM
+libfabric:4110079:1741977414:ofi_rxm:tcp:core:ofi_check_ep_type():708<info> Requested: FI_EP_MSG
+libfabric:4110079:1741977414:ofi_rxm:tcp:core:fi_param_get_():373<info> variable iface=<not set>
+libfabric:4110079:1741977414:ofi_rxm:tcp:core:ofi_get_list_of_addr():2130<info> Available addr: 172.28.23.40, iface name: eth1, speed: 1000
+libfabric:4110079:1741977414:ofi_rxm:tcp:core:ofi_get_list_of_addr():2130<info> Available addr: 172.28.86.40, iface name: hsn0, speed: 200000
+libfabric:4110079:1741977414:ofi_rxm:tcp:core:ofi_get_list_of_addr():2130<info> Available addr: 141.142.254.40, iface name: hsn0.561, speed: 200000
+libfabric:4110079:1741977414:ofi_rxm:tcp:core:ofi_get_list_of_addr():2130<info> Available addr: fe80::e19b:191f:55a3:e6fe, iface name: eth1, speed: 1000
+libfabric:4110079:1741977414:ofi_rxm:tcp:core:ofi_get_list_of_addr():2130<info> Available addr: fe80::8c81:a177:36f7:733d, iface name: hsn0, speed: 200000
+libfabric:4110079:1741977414:ofi_rxm:tcp:core:ofi_get_list_of_addr():2130<info> Available addr: fe80::f5be:56d3:8f95:1a6f, iface name: hsn0.561, speed: 200000
+libfabric:4110079:1741977414:ofi_rxm:tcp:core:ofi_insert_loopback_addr():1960<info> available addr: : fi_sockaddr_in://127.0.0.1:0
+libfabric:4110079:1741977414:ofi_rxm:tcp:core:ofi_insert_loopback_addr():1975<info> available addr: : fi_sockaddr_in6://[::1]:0
+libfabric:4110079:1741977414:ofi_rxm:tcp:core:util_getinfo_ifs():404<info> Chosen addr for using: 141.142.254.40, speed 200000
+libfabric:4110079:1741977414:ofi_rxm:core:core:ofi_layering_ok():1283<info> Skipping util;sockets layering
+libfabric:4110079:1741977414:ofi_rxm:sm2:core:ofi_check_ep_type():707<info> unsupported endpoint type
+libfabric:4110079:1741977414:ofi_rxm:sm2:core:ofi_check_ep_type():708<info> Supported: FI_EP_RDM
+libfabric:4110079:1741977414:ofi_rxm:sm2:core:ofi_check_ep_type():708<info> Requested: FI_EP_MSG
+libfabric:4110079:1741977414:ofi_rxm:sm2:core:ofi_check_ep_type():707<info> unsupported endpoint type
+libfabric:4110079:1741977414:ofi_rxm:sm2:core:ofi_check_ep_type():708<info> Supported: FI_EP_RDM
+libfabric:4110079:1741977414:ofi_rxm:sm2:core:ofi_check_ep_type():708<info> Requested: FI_EP_MSG
+libfabric:4110079:1741977414:ofi_rxm:core:core:fi_getinfo_():1387<info> fi_getinfo: provider sm2 returned -61 (No data available)
+libfabric:4110079:1741977414:ofi_rxm:core:core:ofi_layering_ok():1277<info> Need core provider, skipping ofi_mrail
+libfabric:4110079:1741977414:ofi_rxm:core:core:ofi_layering_ok():1277<info> Need core provider, skipping lnx
+libfabric:4110079:1741977414::ofi_rxm:core:fi_param_get_():373<info> variable use_srx=<not set>
+libfabric:4110079:1741977414:ofi_rxm:core:core:ofi_layering_ok():1283<info> Skipping util;efa layering
+libfabric:4110079:1741977414:ofi_rxm:core:core:fi_getinfo_():1387<info> fi_getinfo: provider verbs returned -61 (No data available)
+libfabric:4110079:1741977414:ofi_rxm:core:core:ofi_layering_ok():1283<info> Skipping util;cxi layering
+libfabric:4110079:1741977414:ofi_rxm:core:core:ofi_layering_ok():1283<info> Skipping util;psm3 layering
+libfabric:4110079:1741977414:ofi_rxm:core:core:ofi_layering_ok():1277<info> Need core provider, skipping ofi_rxm
+libfabric:4110079:1741977414:ofi_rxm:core:core:ofi_layering_ok():1277<info> Need core provider, skipping ofi_rxd
+libfabric:4110079:1741977414:ofi_rxm:core:core:ofi_layering_ok():1283<info> Skipping util;shm layering
+libfabric:4110079:1741977414:ofi_rxm:udp:core:ofi_check_ep_type():707<info> unsupported endpoint type
+libfabric:4110079:1741977414:ofi_rxm:udp:core:ofi_check_ep_type():708<info> Supported: FI_EP_DGRAM
+libfabric:4110079:1741977414:ofi_rxm:udp:core:ofi_check_ep_type():708<info> Requested: FI_EP_MSG
+libfabric:4110079:1741977414:ofi_rxm:core:core:fi_getinfo_():1387<info> fi_getinfo: provider udp returned -61 (No data available)
+libfabric:4110079:1741977414:ofi_rxm:tcp:core:ofi_check_ep_attr():792<info> Provider requires use of shared rx context
+libfabric:4110079:1741977414:ofi_rxm:tcp:core:ofi_check_ep_type():707<info> unsupported endpoint type
+libfabric:4110079:1741977414:ofi_rxm:tcp:core:ofi_check_ep_type():708<info> Supported: FI_EP_RDM
+libfabric:4110079:1741977414:ofi_rxm:tcp:core:ofi_check_ep_type():708<info> Requested: FI_EP_MSG
+libfabric:4110079:1741977414:ofi_rxm:tcp:core:fi_param_get_():373<info> variable iface=<not set>
+libfabric:4110079:1741977414:ofi_rxm:tcp:core:ofi_get_list_of_addr():2130<info> Available addr: 172.28.23.40, iface name: eth1, speed: 1000
+libfabric:4110079:1741977414:ofi_rxm:tcp:core:ofi_get_list_of_addr():2130<info> Available addr: 172.28.86.40, iface name: hsn0, speed: 200000
+libfabric:4110079:1741977414:ofi_rxm:tcp:core:ofi_get_list_of_addr():2130<info> Available addr: 141.142.254.40, iface name: hsn0.561, speed: 200000
+libfabric:4110079:1741977414:ofi_rxm:tcp:core:ofi_get_list_of_addr():2130<info> Available addr: fe80::e19b:191f:55a3:e6fe, iface name: eth1, speed: 1000
+libfabric:4110079:1741977414:ofi_rxm:tcp:core:ofi_get_list_of_addr():2130<info> Available addr: fe80::8c81:a177:36f7:733d, iface name: hsn0, speed: 200000
+libfabric:4110079:1741977414:ofi_rxm:tcp:core:ofi_get_list_of_addr():2130<info> Available addr: fe80::f5be:56d3:8f95:1a6f, iface name: hsn0.561, speed: 200000
+libfabric:4110079:1741977414:ofi_rxm:tcp:core:ofi_insert_loopback_addr():1960<info> available addr: : fi_sockaddr_in://127.0.0.1:0
+libfabric:4110079:1741977414:ofi_rxm:tcp:core:ofi_insert_loopback_addr():1975<info> available addr: : fi_sockaddr_in6://[::1]:0
+libfabric:4110079:1741977414:ofi_rxm:tcp:core:util_getinfo_ifs():404<info> Chosen addr for using: 141.142.254.40, speed 200000
+libfabric:4110079:1741977414:ofi_rxm:core:core:ofi_layering_ok():1283<info> Skipping util;sockets layering
+libfabric:4110079:1741977414:ofi_rxm:sm2:core:ofi_check_ep_type():707<info> unsupported endpoint type
+libfabric:4110079:1741977414:ofi_rxm:sm2:core:ofi_check_ep_type():708<info> Supported: FI_EP_RDM
+libfabric:4110079:1741977414:ofi_rxm:sm2:core:ofi_check_ep_type():708<info> Requested: FI_EP_MSG
+libfabric:4110079:1741977414:ofi_rxm:sm2:core:ofi_check_ep_type():707<info> unsupported endpoint type
+libfabric:4110079:1741977414:ofi_rxm:sm2:core:ofi_check_ep_type():708<info> Supported: FI_EP_RDM
+libfabric:4110079:1741977414:ofi_rxm:sm2:core:ofi_check_ep_type():708<info> Requested: FI_EP_MSG
+libfabric:4110079:1741977414:ofi_rxm:core:core:fi_getinfo_():1387<info> fi_getinfo: provider sm2 returned -61 (No data available)
+libfabric:4110079:1741977414:ofi_rxm:core:core:ofi_layering_ok():1277<info> Need core provider, skipping ofi_mrail
+libfabric:4110079:1741977414:ofi_rxm:core:core:ofi_layering_ok():1277<info> Need core provider, skipping lnx
+libfabric:4110079:1741977414:ofi_rxd:core:core:ofi_layering_ok():1283<info> Skipping util;efa layering
+libfabric:4110079:1741977414:ofi_rxd:core:core:fi_getinfo_():1387<info> fi_getinfo: provider verbs returned -61 (No data available)
+libfabric:4110079:1741977414:ofi_rxd:core:core:ofi_layering_ok():1283<info> Skipping util;cxi layering
+libfabric:4110079:1741977414:ofi_rxd:core:core:ofi_layering_ok():1283<info> Skipping util;psm3 layering
+libfabric:4110079:1741977414:ofi_rxd:core:core:ofi_layering_ok():1277<info> Need core provider, skipping ofi_rxm
+libfabric:4110079:1741977414:ofi_rxd:core:core:ofi_layering_ok():1277<info> Need core provider, skipping ofi_rxd
+libfabric:4110079:1741977414:ofi_rxd:core:core:ofi_layering_ok():1283<info> Skipping util;shm layering
+libfabric:4110079:1741977414:ofi_rxd:udp:core:fi_param_get_():373<info> variable iface=<not set>
+libfabric:4110079:1741977414:ofi_rxd:udp:core:ofi_get_list_of_addr():2130<info> Available addr: 172.28.23.40, iface name: eth1, speed: 1000
+libfabric:4110079:1741977414:ofi_rxd:udp:core:ofi_get_list_of_addr():2130<info> Available addr: 172.28.86.40, iface name: hsn0, speed: 200000
+libfabric:4110079:1741977414:ofi_rxd:udp:core:ofi_get_list_of_addr():2130<info> Available addr: 141.142.254.40, iface name: hsn0.561, speed: 200000
+libfabric:4110079:1741977414:ofi_rxd:udp:core:ofi_get_list_of_addr():2130<info> Available addr: fe80::e19b:191f:55a3:e6fe, iface name: eth1, speed: 1000
+libfabric:4110079:1741977414:ofi_rxd:udp:core:ofi_get_list_of_addr():2130<info> Available addr: fe80::8c81:a177:36f7:733d, iface name: hsn0, speed: 200000
+libfabric:4110079:1741977414:ofi_rxd:udp:core:ofi_get_list_of_addr():2130<info> Available addr: fe80::f5be:56d3:8f95:1a6f, iface name: hsn0.561, speed: 200000
+libfabric:4110079:1741977414:ofi_rxd:udp:core:ofi_insert_loopback_addr():1960<info> available addr: : fi_sockaddr_in://127.0.0.1:0
+libfabric:4110079:1741977414:ofi_rxd:udp:core:ofi_insert_loopback_addr():1975<info> available addr: : fi_sockaddr_in6://[::1]:0
+libfabric:4110079:1741977414:ofi_rxd:udp:core:util_getinfo_ifs():404<info> Chosen addr for using: 141.142.254.40, speed 200000
+libfabric:4110079:1741977414:ofi_rxd:tcp:core:ofi_check_ep_type():707<info> unsupported endpoint type
+libfabric:4110079:1741977414:ofi_rxd:tcp:core:ofi_check_ep_type():708<info> Supported: FI_EP_MSG
+libfabric:4110079:1741977414:ofi_rxd:tcp:core:ofi_check_ep_type():708<info> Requested: FI_EP_DGRAM
+libfabric:4110079:1741977414:ofi_rxd:tcp:core:ofi_check_ep_type():707<info> unsupported endpoint type
+libfabric:4110079:1741977414:ofi_rxd:tcp:core:ofi_check_ep_type():708<info> Supported: FI_EP_MSG
+libfabric:4110079:1741977414:ofi_rxd:tcp:core:ofi_check_ep_type():708<info> Requested: FI_EP_DGRAM
+libfabric:4110079:1741977414:ofi_rxd:tcp:core:ofi_check_ep_type():707<info> unsupported endpoint type
+libfabric:4110079:1741977414:ofi_rxd:tcp:core:ofi_check_ep_type():708<info> Supported: FI_EP_RDM
+libfabric:4110079:1741977414:ofi_rxd:tcp:core:ofi_check_ep_type():708<info> Requested: FI_EP_DGRAM
+libfabric:4110079:1741977414:ofi_rxd:core:core:fi_getinfo_():1387<info> fi_getinfo: provider tcp returned -61 (No data available)
+libfabric:4110079:1741977414:ofi_rxd:core:core:ofi_layering_ok():1283<info> Skipping util;sockets layering
+libfabric:4110079:1741977414:ofi_rxd:sm2:core:ofi_check_ep_type():707<info> unsupported endpoint type
+libfabric:4110079:1741977414:ofi_rxd:sm2:core:ofi_check_ep_type():708<info> Supported: FI_EP_RDM
+libfabric:4110079:1741977414:ofi_rxd:sm2:core:ofi_check_ep_type():708<info> Requested: FI_EP_DGRAM
+libfabric:4110079:1741977414:ofi_rxd:sm2:core:ofi_check_ep_type():707<info> unsupported endpoint type
+libfabric:4110079:1741977414:ofi_rxd:sm2:core:ofi_check_ep_type():708<info> Supported: FI_EP_RDM
+libfabric:4110079:1741977414:ofi_rxd:sm2:core:ofi_check_ep_type():708<info> Requested: FI_EP_DGRAM
+libfabric:4110079:1741977414:ofi_rxd:core:core:fi_getinfo_():1387<info> fi_getinfo: provider sm2 returned -61 (No data available)
+libfabric:4110079:1741977414:ofi_rxd:core:core:ofi_layering_ok():1277<info> Need core provider, skipping ofi_mrail
+libfabric:4110079:1741977414:ofi_rxd:core:core:ofi_layering_ok():1277<info> Need core provider, skipping lnx
+libfabric:4110079:1741977414::shm:core:ofi_check_info():1110<info> Unsupported capabilities
+libfabric:4110079:1741977414::shm:core:ofi_check_info():1111<info> Supported: FI_MSG, FI_RMA, FI_TAGGED, FI_ATOMIC, FI_READ, FI_WRITE, FI_RECV, FI_SEND, FI_REMOTE_READ, FI_REMOTE_WRITE, FI_MULTI_RECV, FI_LOCAL_COMM, FI_RMA_EVENT, FI_SOURCE, FI_DIRECTED_RECV, FI_AV_USER_ID, FI_PEER
+libfabric:4110079:1741977414::shm:core:ofi_check_info():1111<info> Requested: FI_MSG, FI_TAGGED, FI_LOCAL_COMM, FI_REMOTE_COMM, FI_DIRECTED_RECV
+libfabric:4110079:1741977414::shm:core:ofi_check_info():1110<info> Unsupported capabilities
+libfabric:4110079:1741977414::shm:core:ofi_check_info():1111<info> Supported: FI_MSG, FI_RMA, FI_TAGGED, FI_ATOMIC, FI_READ, FI_WRITE, FI_RECV, FI_SEND, FI_REMOTE_READ, FI_REMOTE_WRITE, FI_MULTI_RECV, FI_LOCAL_COMM, FI_RMA_EVENT, FI_SOURCE, FI_DIRECTED_RECV, FI_AV_USER_ID, FI_PEER, FI_HMEM
+libfabric:4110079:1741977414::shm:core:ofi_check_info():1111<info> Requested: FI_MSG, FI_TAGGED, FI_LOCAL_COMM, FI_REMOTE_COMM, FI_DIRECTED_RECV
+libfabric:4110079:1741977414::core:core:fi_getinfo_():1387<info> fi_getinfo: provider shm returned -61 (No data available)
+libfabric:4110079:1741977414::udp:core:ofi_check_ep_type():707<info> unsupported endpoint type
+libfabric:4110079:1741977414::udp:core:ofi_check_ep_type():708<info> Supported: FI_EP_DGRAM
+libfabric:4110079:1741977414::udp:core:ofi_check_ep_type():708<info> Requested: FI_EP_RDM
+libfabric:4110079:1741977414::core:core:fi_getinfo_():1387<info> fi_getinfo: provider udp returned -61 (No data available)
+libfabric:4110079:1741977414::tcp:core:ofi_check_ep_type():707<info> unsupported endpoint type
+libfabric:4110079:1741977414::tcp:core:ofi_check_ep_type():708<info> Supported: FI_EP_MSG
+libfabric:4110079:1741977414::tcp:core:ofi_check_ep_type():708<info> Requested: FI_EP_RDM
+libfabric:4110079:1741977414::tcp:core:ofi_check_ep_type():707<info> unsupported endpoint type
+libfabric:4110079:1741977414::tcp:core:ofi_check_ep_type():708<info> Supported: FI_EP_MSG
+libfabric:4110079:1741977414::tcp:core:ofi_check_ep_type():708<info> Requested: FI_EP_RDM
+libfabric:4110079:1741977414::tcp:core:fi_param_get_():373<info> variable iface=<not set>
+libfabric:4110079:1741977414::tcp:core:ofi_get_list_of_addr():2130<info> Available addr: 172.28.23.40, iface name: eth1, speed: 1000
+libfabric:4110079:1741977414::tcp:core:ofi_get_list_of_addr():2130<info> Available addr: 172.28.86.40, iface name: hsn0, speed: 200000
+libfabric:4110079:1741977414::tcp:core:ofi_get_list_of_addr():2130<info> Available addr: 141.142.254.40, iface name: hsn0.561, speed: 200000
+libfabric:4110079:1741977414::tcp:core:ofi_get_list_of_addr():2130<info> Available addr: fe80::e19b:191f:55a3:e6fe, iface name: eth1, speed: 1000
+libfabric:4110079:1741977414::tcp:core:ofi_get_list_of_addr():2130<info> Available addr: fe80::8c81:a177:36f7:733d, iface name: hsn0, speed: 200000
+libfabric:4110079:1741977414::tcp:core:ofi_get_list_of_addr():2130<info> Available addr: fe80::f5be:56d3:8f95:1a6f, iface name: hsn0.561, speed: 200000
+libfabric:4110079:1741977414::tcp:core:ofi_insert_loopback_addr():1960<info> available addr: : fi_sockaddr_in://127.0.0.1:0
+libfabric:4110079:1741977414::tcp:core:ofi_insert_loopback_addr():1975<info> available addr: : fi_sockaddr_in6://[::1]:0
+libfabric:4110079:1741977414::tcp:core:util_getinfo_ifs():404<info> Chosen addr for using: 141.142.254.40, speed 200000
+libfabric:4110079:1741977414::sockets:core:ofi_check_ep_type():707<info> unsupported endpoint type
+libfabric:4110079:1741977414::sockets:core:ofi_check_ep_type():708<info> Supported: FI_EP_DGRAM
+libfabric:4110079:1741977414::sockets:core:ofi_check_ep_type():708<info> Requested: FI_EP_RDM
+libfabric:4110079:1741977414::sockets:core:ofi_check_ep_type():707<info> unsupported endpoint type
+libfabric:4110079:1741977414::sockets:core:ofi_check_ep_type():708<info> Supported: FI_EP_MSG
+libfabric:4110079:1741977414::sockets:core:ofi_check_ep_type():708<info> Requested: FI_EP_RDM
+libfabric:4110079:1741977414::sockets:core:fi_param_get_():373<info> variable iface=<not set>
+libfabric:4110079:1741977414::sockets:core:ofi_get_list_of_addr():2130<info> Available addr: 172.28.23.40, iface name: eth1, speed: 1000
+libfabric:4110079:1741977414::sockets:core:ofi_get_list_of_addr():2130<info> Available addr: 172.28.86.40, iface name: hsn0, speed: 200000
+libfabric:4110079:1741977414::sockets:core:ofi_get_list_of_addr():2130<info> Available addr: 141.142.254.40, iface name: hsn0.561, speed: 200000
+libfabric:4110079:1741977414::sockets:core:ofi_get_list_of_addr():2130<info> Available addr: fe80::e19b:191f:55a3:e6fe, iface name: eth1, speed: 1000
+libfabric:4110079:1741977414::sockets:core:ofi_get_list_of_addr():2130<info> Available addr: fe80::8c81:a177:36f7:733d, iface name: hsn0, speed: 200000
+libfabric:4110079:1741977414::sockets:core:ofi_get_list_of_addr():2130<info> Available addr: fe80::f5be:56d3:8f95:1a6f, iface name: hsn0.561, speed: 200000
+libfabric:4110079:1741977414::sockets:core:ofi_insert_loopback_addr():1960<info> available addr: : fi_sockaddr_in://127.0.0.1:0
+libfabric:4110079:1741977414::sockets:core:ofi_insert_loopback_addr():1975<info> available addr: : fi_sockaddr_in6://[::1]:0
+libfabric:4110079:1741977414::sockets:core:util_getinfo_ifs():404<info> Chosen addr for using: 141.142.254.40, speed 200000
+libfabric:4110079:1741977414::sm2:core:ofi_check_info():1110<info> Unsupported capabilities
+libfabric:4110079:1741977414::sm2:core:ofi_check_info():1111<info> Supported: FI_MSG, FI_TAGGED, FI_ATOMIC, FI_READ, FI_WRITE, FI_RECV, FI_SEND, FI_REMOTE_READ, FI_REMOTE_WRITE, FI_MULTI_RECV, FI_LOCAL_COMM, FI_RMA_EVENT, FI_SOURCE, FI_DIRECTED_RECV
+libfabric:4110079:1741977414::sm2:core:ofi_check_info():1111<info> Requested: FI_MSG, FI_TAGGED, FI_LOCAL_COMM, FI_REMOTE_COMM, FI_DIRECTED_RECV
+libfabric:4110079:1741977414::sm2:core:ofi_check_info():1110<info> Unsupported capabilities
+libfabric:4110079:1741977414::sm2:core:ofi_check_info():1111<info> Supported: FI_MSG, FI_TAGGED, FI_READ, FI_WRITE, FI_RECV, FI_SEND, FI_REMOTE_READ, FI_REMOTE_WRITE, FI_MULTI_RECV, FI_LOCAL_COMM, FI_RMA_EVENT, FI_SOURCE, FI_DIRECTED_RECV, FI_HMEM
+libfabric:4110079:1741977414::sm2:core:ofi_check_info():1111<info> Requested: FI_MSG, FI_TAGGED, FI_LOCAL_COMM, FI_REMOTE_COMM, FI_DIRECTED_RECV
+libfabric:4110079:1741977414::core:core:fi_getinfo_():1387<info> fi_getinfo: provider sm2 returned -61 (No data available)
+libfabric:4110079:1741977414::ofi_mrail:fabric:mrail_get_core_info():286<info> OFI_MRAIL_ADDR_STRC env variable not set!
+libfabric:4110079:1741977414::core:core:fi_getinfo_():1387<info> fi_getinfo: provider ofi_mrail returned -61 (No data available)
+libfabric:4110079:1741977414::lnx:core:fi_param_get_():382<info> read string var prov_links=shm+cxi
+libfabric:4110079:1741977414::core:core:ofi_layering_ok():1303<info> Skipping shm;ofi_rxm layering
+libfabric:4110079:1741977414::core:core:ofi_layering_ok():1303<info> Skipping shm;ofi_rxd layering
+libfabric:4110079:1741977414::shm:core:ofi_check_info():1110<info> Unsupported capabilities
+libfabric:4110079:1741977414::shm:core:ofi_check_info():1111<info> Supported: FI_MSG, FI_RMA, FI_TAGGED, FI_ATOMIC, FI_READ, FI_WRITE, FI_RECV, FI_SEND, FI_REMOTE_READ, FI_REMOTE_WRITE, FI_MULTI_RECV, FI_LOCAL_COMM, FI_RMA_EVENT, FI_SOURCE, FI_DIRECTED_RECV, FI_AV_USER_ID, FI_PEER
+libfabric:4110079:1741977414::shm:core:ofi_check_info():1111<info> Requested: FI_MSG, FI_TAGGED, FI_DIRECTED_RECV, FI_PEER, FI_HMEM
+libfabric:4110079:1741977414::core:core:ofi_layering_ok():1303<info> Skipping shm;ofi_mrail layering
+libfabric:4110079:1741977414::cxi:core:ofi_check_info():1110<info> Unsupported capabilities
+libfabric:4110079:1741977414::cxi:core:ofi_check_info():1111<info> Supported: FI_MSG, FI_RMA, FI_TAGGED, FI_ATOMIC, FI_COLLECTIVE, FI_READ, FI_WRITE, FI_RECV, FI_SEND, FI_REMOTE_READ, FI_REMOTE_WRITE, FI_MULTI_RECV, FI_TRIGGER, FI_FENCE, FI_SOURCE_ERR, FI_LOCAL_COMM, FI_REMOTE_COMM, FI_RMA_EVENT, FI_SOURCE, FI_NAMED_RX_CTX, FI_AV_USER_ID, FI_PEER, FI_HMEM
+libfabric:4110079:1741977414::cxi:core:ofi_check_info():1111<info> Requested: FI_MSG, FI_TAGGED, FI_LOCAL_COMM, FI_REMOTE_COMM, FI_DIRECTED_RECV, FI_PEER
+libfabric:4110079:1741977414::cxi:core:ofi_check_info():1110<info> Unsupported capabilities
+libfabric:4110079:1741977414::cxi:core:ofi_check_info():1111<info> Supported: FI_MSG, FI_RMA, FI_TAGGED, FI_ATOMIC, FI_COLLECTIVE, FI_READ, FI_WRITE, FI_RECV, FI_SEND, FI_REMOTE_READ, FI_REMOTE_WRITE, FI_MULTI_RECV, FI_TRIGGER, FI_FENCE, FI_SOURCE_ERR, FI_LOCAL_COMM, FI_REMOTE_COMM, FI_RMA_EVENT, FI_SOURCE, FI_NAMED_RX_CTX, FI_AV_USER_ID, FI_PEER, FI_HMEM
+libfabric:4110079:1741977414::cxi:core:ofi_check_info():1111<info> Requested: FI_MSG, FI_TAGGED, FI_LOCAL_COMM, FI_REMOTE_COMM, FI_DIRECTED_RECV, FI_PEER
+libfabric:4110079:1741977414::cxi:core:ofi_check_rx_attr():887<info> msg_order not supported
+libfabric:4110079:1741977414::cxi:core:ofi_check_rx_attr():889<info> Supported: FI_ORDER_WAW, FI_ORDER_RMA_RAR, FI_ORDER_RMA_WAW, FI_ORDER_ATOMIC_RAR, FI_ORDER_ATOMIC_WAW
+libfabric:4110079:1741977414::cxi:core:ofi_check_rx_attr():889<info> Requested: FI_ORDER_SAS
+libfabric:4110079:1741977414::cxi:core:ofi_check_rx_attr():887<info> msg_order not supported
+libfabric:4110079:1741977414::cxi:core:ofi_check_rx_attr():889<info> Supported: FI_ORDER_WAW, FI_ORDER_RMA_RAR, FI_ORDER_RMA_WAW, FI_ORDER_ATOMIC_RAR, FI_ORDER_ATOMIC_WAW
+libfabric:4110079:1741977414::cxi:core:ofi_check_rx_attr():889<info> Requested: FI_ORDER_SAS
+libfabric:4110079:1741977414::cxi:core:ofi_check_rx_attr():887<info> msg_order not supported
+libfabric:4110079:1741977414::cxi:core:ofi_check_rx_attr():889<info> Supported: FI_ORDER_WAW, FI_ORDER_RMA_RAR, FI_ORDER_RMA_WAW, FI_ORDER_ATOMIC_RAR, FI_ORDER_ATOMIC_WAW
+libfabric:4110079:1741977414::cxi:core:ofi_check_rx_attr():889<info> Requested: FI_ORDER_SAS
+libfabric:4110079:1741977414::cxi:core:ofi_check_rx_attr():887<info> msg_order not supported
+libfabric:4110079:1741977414::cxi:core:ofi_check_rx_attr():889<info> Supported: FI_ORDER_WAW, FI_ORDER_RMA_RAR, FI_ORDER_RMA_WAW, FI_ORDER_ATOMIC_RAR, FI_ORDER_ATOMIC_WAW
+libfabric:4110079:1741977414::cxi:core:ofi_check_rx_attr():889<info> Requested: FI_ORDER_SAS
+libfabric:4110079:1741977414::cxi:fabric:cxip_nic_get_ss_env_get_vni():23<info> gpua040.delta.ncsa.illinois.edu: SLINGSHOT_VNIS not found
+libfabric:4110079:1741977414::cxi:fabric:cxip_nic_get_best_rgroup_vni():236<info> gpua040.delta.ncsa.illinois.edu: Found (1:1) for cxi0
+libfabric:4110079:1741977414::cxi:fabric:cxip_nic_get_ss_env_get_vni():23<info> gpua040.delta.ncsa.illinois.edu: SLINGSHOT_VNIS not found
+libfabric:4110079:1741977414::cxi:fabric:cxip_nic_get_best_rgroup_vni():236<info> gpua040.delta.ncsa.illinois.edu: Found (1:1) for cxi0
+libfabric:4110079:1741977414::core:core:ofi_layering_ok():1303<info> Skipping cxi;ofi_rxm layering
+libfabric:4110079:1741977414::core:core:ofi_layering_ok():1303<info> Skipping cxi;ofi_rxd layering
+libfabric:4110079:1741977414::core:core:ofi_layering_ok():1303<info> Skipping cxi;ofi_mrail layering
+libfabric:4110079:1741977414::core:mr:ofi_monitor_import():192<info> setting imported memory monitor as default
+libfabric:4110079:1741977414::core:core:fi_fabric_():1592<info> Opened fabric: cxi
+libfabric:4110079:1741977414::core:core:fi_fabric_():1603<info> Using cxi provider 2.1, path:/u/bwibking/mpi_install/lib/libfabric.so.1
+libfabric:4110079:1741977414::cxi:core:ofi_check_rx_attr():864<info> Tx only caps ignored in Rx caps
+libfabric:4110079:1741977414::cxi:core:ofi_check_tx_attr():953<info> Rx only caps ignored in Tx caps
+libfabric:4110079:1741977414::cxi:core:ofi_check_rx_attr():864<info> Tx only caps ignored in Rx caps
+libfabric:4110079:1741977414::cxi:core:ofi_check_tx_attr():953<info> Rx only caps ignored in Tx caps
+libfabric:4110079:1741977414::cxi:core:ofi_check_info():1110<info> Unsupported capabilities
+libfabric:4110079:1741977414::cxi:core:ofi_check_info():1111<info> Supported: FI_MSG, FI_RMA, FI_TAGGED, FI_ATOMIC, FI_COLLECTIVE, FI_READ, FI_WRITE, FI_RECV, FI_SEND, FI_REMOTE_READ, FI_REMOTE_WRITE, FI_MULTI_RECV, FI_TRIGGER, FI_FENCE, FI_SOURCE_ERR, FI_LOCAL_COMM, FI_REMOTE_COMM, FI_RMA_EVENT, FI_SOURCE, FI_NAMED_RX_CTX, FI_AV_USER_ID, FI_PEER, FI_HMEM
+libfabric:4110079:1741977414::cxi:core:ofi_check_info():1111<info> Requested: FI_MSG, FI_TAGGED, FI_RECV, FI_SEND, FI_MULTI_RECV, FI_TRIGGER, FI_LOCAL_COMM, FI_REMOTE_COMM, FI_DIRECTED_RECV
+libfabric:4110079:1741977414::cxi:core:ofi_check_info():1110<info> Unsupported capabilities
+libfabric:4110079:1741977414::cxi:core:ofi_check_info():1111<info> Supported: FI_MSG, FI_RMA, FI_TAGGED, FI_ATOMIC, FI_COLLECTIVE, FI_READ, FI_WRITE, FI_RECV, FI_SEND, FI_REMOTE_READ, FI_REMOTE_WRITE, FI_MULTI_RECV, FI_TRIGGER, FI_FENCE, FI_SOURCE_ERR, FI_LOCAL_COMM, FI_REMOTE_COMM, FI_RMA_EVENT, FI_SOURCE, FI_NAMED_RX_CTX, FI_AV_USER_ID, FI_PEER, FI_HMEM
+libfabric:4110079:1741977414::cxi:core:ofi_check_info():1111<info> Requested: FI_MSG, FI_TAGGED, FI_RECV, FI_SEND, FI_MULTI_RECV, FI_TRIGGER, FI_LOCAL_COMM, FI_REMOTE_COMM, FI_DIRECTED_RECV
+libfabric:4110079:1741977414::cxi:core:ofi_check_ep_attr():735<info> Unsupported protocol
+libfabric:4110079:1741977414::cxi:core:ofi_check_ep_attr():736<info> Supported: FI_PROTO_CXI_RNR
+libfabric:4110079:1741977414::cxi:core:ofi_check_ep_attr():736<info> Requested: FI_PROTO_CXI
+libfabric:4110079:1741977414::cxi:core:ofi_check_ep_attr():735<info> Unsupported protocol
+libfabric:4110079:1741977414::cxi:core:ofi_check_ep_attr():736<info> Supported: FI_PROTO_CXI_RNR
+libfabric:4110079:1741977414::cxi:core:ofi_check_ep_attr():736<info> Requested: FI_PROTO_CXI
+libfabric:4110079:1741977414::cxi:core:ofi_check_ep_attr():735<info> Unsupported protocol
+libfabric:4110079:1741977414::cxi:core:ofi_check_ep_attr():736<info> Supported: FI_PROTO_CXI_RNR
+libfabric:4110079:1741977414::cxi:core:ofi_check_ep_attr():736<info> Requested: FI_PROTO_CXI
+libfabric:4110079:1741977414::cxi:core:ofi_check_ep_attr():735<info> Unsupported protocol
+libfabric:4110079:1741977414::cxi:core:ofi_check_ep_attr():736<info> Supported: FI_PROTO_CXI_RNR
+libfabric:4110079:1741977414::cxi:core:ofi_check_ep_attr():736<info> Requested: FI_PROTO_CXI
+libfabric:4110080:1741977414::verbs:core:fi_param_get_():373<info> variable tx_size=<not set>
+libfabric:4110080:1741977414::verbs:core:fi_param_get_():373<info> variable rx_size=<not set>
+libfabric:4110079:1741977414::cxi:domain:cxip_domain_enable():463<warn> gpua040.delta.ncsa.illinois.edu: Security Issue: Using unrestricted service ID 1 for cxi0. Please provide a service ID via auth_key fields.
+libfabric:4110080:1741977414::verbs:core:fi_param_get_():373<info> variable tx_iov_limit=<not set>
+libfabric:4110080:1741977414::verbs:core:fi_param_get_():373<info> variable rx_iov_limit=<not set>
+libfabric:4110080:1741977414::verbs:core:fi_param_get_():373<info> variable inline_size=<not set>
+libfabric:4110080:1741977414::verbs:core:fi_param_get_():373<info> variable min_rnr_timer=<not set>
+libfabric:4110080:1741977414::verbs:core:fi_param_get_():373<info> variable use_odp=<not set>
+libfabric:4110080:1741977414::verbs:core:fi_param_get_():373<info> variable prefer_xrc=<not set>
+libfabric:4110080:1741977414::verbs:core:fi_param_get_():373<info> variable xrcd_filename=<not set>
+libfabric:4110080:1741977414::verbs:core:fi_param_get_():373<info> variable cqread_bunch_size=<not set>
+libfabric:4110080:1741977414::verbs:core:fi_param_get_():373<info> variable gid_idx=<not set>
+libfabric:4110080:1741977414::verbs:core:fi_param_get_():373<info> variable device_name=<not set>
+libfabric:4110080:1741977414::verbs:core:vrb_read_params():737<info> dmabuf support is disabled
+libfabric:4110080:1741977414::verbs:core:fi_param_get_():373<info> variable iface=<not set>
+libfabric:4110080:1741977414::verbs:core:fi_param_get_():373<info> variable dgram_use_name_server=<not set>
+libfabric:4110080:1741977414::verbs:core:fi_param_get_():373<info> variable dgram_name_server_port=<not set>
+libfabric:4110079:1741977414::cxi:mr:cxip_iomm_init():323<info> gpua040.delta.ncsa.illinois.edu: Domain ATS: 0 ODP: 0 HMEM: 0 Scalable: 0
+libfabric:4110079:1741977414::core:mr:ofi_monitors_update():118<info> Starting memory monitor: import
+libfabric:4110079:1741977414::core:mr:ofi_monitors_update():118<info> Starting memory monitor: cuda
+libfabric:4110079:1741977414::cxi:mr:cxip_iomm_init():350<info> gpua040.delta.ncsa.illinois.edu: MR cache enabled for FI_HMEM_SYSTEM memory
+libfabric:4110079:1741977414::cxi:mr:cxip_iomm_init():350<info> gpua040.delta.ncsa.illinois.edu: MR cache enabled for FI_HMEM_CUDA memory
+libfabric:4110079:1741977414::cxi:domain:cxip_domain_enable():501<info> gpua040.delta.ncsa.illinois.edu: DOM (cxi0:3:1:1:0x176): Domain enabled
+libfabric:4110079:1741977414::cxi:core:ofi_check_rx_attr():864<info> Tx only caps ignored in Rx caps
+libfabric:4110079:1741977414::cxi:core:ofi_check_tx_attr():953<info> Rx only caps ignored in Tx caps
+libfabric:4110079:1741977414::cxi:core:ofi_check_rx_attr():864<info> Tx only caps ignored in Rx caps
+libfabric:4110079:1741977414::cxi:core:ofi_check_tx_attr():953<info> Rx only caps ignored in Tx caps
+libfabric:4110079:1741977414::cxi:core:ofi_check_info():1110<info> Unsupported capabilities
+libfabric:4110079:1741977414::cxi:core:ofi_check_info():1111<info> Supported: FI_MSG, FI_RMA, FI_TAGGED, FI_ATOMIC, FI_COLLECTIVE, FI_READ, FI_WRITE, FI_RECV, FI_SEND, FI_REMOTE_READ, FI_REMOTE_WRITE, FI_MULTI_RECV, FI_TRIGGER, FI_FENCE, FI_SOURCE_ERR, FI_LOCAL_COMM, FI_REMOTE_COMM, FI_RMA_EVENT, FI_SOURCE, FI_NAMED_RX_CTX, FI_AV_USER_ID, FI_PEER, FI_HMEM
+libfabric:4110079:1741977414::cxi:core:ofi_check_info():1111<info> Requested: FI_MSG, FI_TAGGED, FI_RECV, FI_SEND, FI_MULTI_RECV, FI_TRIGGER, FI_LOCAL_COMM, FI_REMOTE_COMM, FI_DIRECTED_RECV
+libfabric:4110079:1741977414::cxi:core:ofi_check_info():1110<info> Unsupported capabilities
+libfabric:4110080:1741977414::verbs:fabric:vrb_init_info():1388<info> no RDMA devices found
+libfabric:4110080:1741977414::core:core:fi_getinfo_():1387<info> fi_getinfo: provider verbs returned -61 (No data available)
+libfabric:4110080:1741977414::cxi:core:ofi_check_info():1110<info> Unsupported capabilities
+libfabric:4110080:1741977414::cxi:core:ofi_check_info():1111<info> Supported: FI_MSG, FI_RMA, FI_TAGGED, FI_ATOMIC, FI_COLLECTIVE, FI_READ, FI_WRITE, FI_RECV, FI_SEND, FI_REMOTE_READ, FI_REMOTE_WRITE, FI_MULTI_RECV, FI_TRIGGER, FI_FENCE, FI_SOURCE_ERR, FI_LOCAL_COMM, FI_REMOTE_COMM, FI_RMA_EVENT, FI_SOURCE, FI_NAMED_RX_CTX, FI_AV_USER_ID, FI_PEER, FI_HMEM
+libfabric:4110080:1741977414::cxi:core:ofi_check_info():1111<info> Requested: FI_MSG, FI_TAGGED, FI_LOCAL_COMM, FI_REMOTE_COMM, FI_DIRECTED_RECV
+libfabric:4110080:1741977414::cxi:core:ofi_check_info():1110<info> Unsupported capabilities
+libfabric:4110080:1741977414::cxi:core:ofi_check_info():1111<info> Supported: FI_MSG, FI_RMA, FI_TAGGED, FI_ATOMIC, FI_COLLECTIVE, FI_READ, FI_WRITE, FI_RECV, FI_SEND, FI_REMOTE_READ, FI_REMOTE_WRITE, FI_MULTI_RECV, FI_TRIGGER, FI_FENCE, FI_SOURCE_ERR, FI_LOCAL_COMM, FI_REMOTE_COMM, FI_RMA_EVENT, FI_SOURCE, FI_NAMED_RX_CTX, FI_AV_USER_ID, FI_PEER, FI_HMEM
+libfabric:4110080:1741977414::cxi:core:ofi_check_info():1111<info> Requested: FI_MSG, FI_TAGGED, FI_LOCAL_COMM, FI_REMOTE_COMM, FI_DIRECTED_RECV
+libfabric:4110079:1741977414::cxi:core:ofi_check_info():1111<info> Supported: FI_MSG, FI_RMA, FI_TAGGED, FI_ATOMIC, FI_COLLECTIVE, FI_READ, FI_WRITE, FI_RECV, FI_SEND, FI_REMOTE_READ, FI_REMOTE_WRITE, FI_MULTI_RECV, FI_TRIGGER, FI_FENCE, FI_SOURCE_ERR, FI_LOCAL_COMM, FI_REMOTE_COMM, FI_RMA_EVENT, FI_SOURCE, FI_NAMED_RX_CTX, FI_AV_USER_ID, FI_PEER, FI_HMEM
+libfabric:4110079:1741977414::cxi:core:ofi_check_info():1111<info> Requested: FI_MSG, FI_TAGGED, FI_RECV, FI_SEND, FI_MULTI_RECV, FI_TRIGGER, FI_LOCAL_COMM, FI_REMOTE_COMM, FI_DIRECTED_RECV
+libfabric:4110079:1741977414::cxi:core:ofi_check_ep_attr():735<info> Unsupported protocol
+libfabric:4110079:1741977414::cxi:core:ofi_check_ep_attr():736<info> Supported: FI_PROTO_CXI_RNR
+libfabric:4110079:1741977414::cxi:core:ofi_check_ep_attr():736<info> Requested: FI_PROTO_CXI
+libfabric:4110079:1741977414::cxi:core:ofi_check_ep_attr():735<info> Unsupported protocol
+libfabric:4110079:1741977414::cxi:core:ofi_check_ep_attr():736<info> Supported: FI_PROTO_CXI_RNR
+libfabric:4110079:1741977414::cxi:core:ofi_check_ep_attr():736<info> Requested: FI_PROTO_CXI
+libfabric:4110079:1741977414::cxi:core:ofi_check_ep_attr():735<info> Unsupported protocol
+libfabric:4110079:1741977414::cxi:core:ofi_check_ep_attr():736<info> Supported: FI_PROTO_CXI_RNR
+libfabric:4110079:1741977414::cxi:core:ofi_check_ep_attr():736<info> Requested: FI_PROTO_CXI
+libfabric:4110079:1741977414::cxi:core:ofi_check_ep_attr():735<info> Unsupported protocol
+libfabric:4110079:1741977414::cxi:core:ofi_check_ep_attr():736<info> Supported: FI_PROTO_CXI_RNR
+libfabric:4110079:1741977414::cxi:core:ofi_check_ep_attr():736<info> Requested: FI_PROTO_CXI
+libfabric:4110079:1741977414::cxi:core:fi_param_get_():373<info> variable rx_match_mode=<not set>
+libfabric:4110080:1741977414::cxi:core:ofi_check_rx_attr():887<info> msg_order not supported
+libfabric:4110080:1741977414::cxi:core:ofi_check_rx_attr():889<info> Supported: FI_ORDER_WAW, FI_ORDER_RMA_RAR, FI_ORDER_RMA_WAW, FI_ORDER_ATOMIC_RAR, FI_ORDER_ATOMIC_WAW
+libfabric:4110080:1741977414::cxi:core:ofi_check_rx_attr():889<info> Requested: FI_ORDER_SAS
+libfabric:4110080:1741977414::cxi:core:ofi_check_rx_attr():887<info> msg_order not supported
+libfabric:4110080:1741977414::cxi:core:ofi_check_rx_attr():889<info> Supported: FI_ORDER_WAW, FI_ORDER_RMA_RAR, FI_ORDER_RMA_WAW, FI_ORDER_ATOMIC_RAR, FI_ORDER_ATOMIC_WAW
+libfabric:4110080:1741977414::cxi:core:ofi_check_rx_attr():889<info> Requested: FI_ORDER_SAS
+libfabric:4110080:1741977414::cxi:core:ofi_check_rx_attr():887<info> msg_order not supported
+libfabric:4110080:1741977414::cxi:core:ofi_check_rx_attr():889<info> Supported: FI_ORDER_WAW, FI_ORDER_RMA_RAR, FI_ORDER_RMA_WAW, FI_ORDER_ATOMIC_RAR, FI_ORDER_ATOMIC_WAW
+libfabric:4110080:1741977414::cxi:core:ofi_check_rx_attr():889<info> Requested: FI_ORDER_SAS
+libfabric:4110080:1741977414::cxi:core:ofi_check_rx_attr():887<info> msg_order not supported
+libfabric:4110080:1741977414::cxi:core:ofi_check_rx_attr():889<info> Supported: FI_ORDER_WAW, FI_ORDER_RMA_RAR, FI_ORDER_RMA_WAW, FI_ORDER_ATOMIC_RAR, FI_ORDER_ATOMIC_WAW
+libfabric:4110080:1741977414::cxi:core:ofi_check_rx_attr():889<info> Requested: FI_ORDER_SAS
+libfabric:4110079:1741977414::cxi:core:fi_param_get_():373<info> variable hybrid_preemptive=<not set>
+libfabric:4110079:1741977414::cxi:core:fi_param_get_():373<info> variable hybrid_recv_preemptive=<not set>
+libfabric:4110079:1741977414::cxi:core:fi_param_get_():373<info> variable hybrid_unexpected_msg_preemptive=<not set>
+libfabric:4110079:1741977414::cxi:core:fi_param_get_():373<info> variable hybrid_posted_recv_preemptive=<not set>
+libfabric:4110080:1741977414::cxi:fabric:cxip_nic_get_ss_env_get_vni():23<info> gpua040.delta.ncsa.illinois.edu: SLINGSHOT_VNIS not found
+libfabric:4110080:1741977414::cxi:fabric:cxip_nic_get_best_rgroup_vni():236<info> gpua040.delta.ncsa.illinois.edu: Found (1:1) for cxi0
+libfabric:4110080:1741977414::cxi:fabric:cxip_nic_get_ss_env_get_vni():23<info> gpua040.delta.ncsa.illinois.edu: SLINGSHOT_VNIS not found
+libfabric:4110080:1741977414::cxi:fabric:cxip_nic_get_best_rgroup_vni():236<info> gpua040.delta.ncsa.illinois.edu: Found (1:1) for cxi0
+libfabric:4110080:1741977414::psm3:core:psmx3_getinfo():686<info> gpua040.delta.ncsa.illinois.edu:rank1: 
+libfabric:4110080:1741977414::psm3:core:psmx3_init_prov_info():479<info> gpua040.delta.ncsa.illinois.edu:rank1: TAG60 instance included
+libfabric:4110079:1741977414::cxi:ep_ctrl:cxip_coll_enable():4346<info> gpua040.delta.ncsa.illinois.edu: FI_COLLECTIVE not requested
+libfabric:4110080:1741977414::psm3:core:psmx3_init_lib():380<info> gpua040.delta.ncsa.illinois.edu:rank1: PSM3 header version = (3, 0)
+libfabric:4110080:1741977414::psm3:core:psmx3_init_lib():382<info> gpua040.delta.ncsa.illinois.edu:rank1: PSM3 library version = (3, 0)
+libfabric:4110080:1741977414::psm3:core:psmx3_init_lib():385<info> gpua040.delta.ncsa.illinois.edu:rank1: PSM3 multi-ep feature enabled.
+libfabric:4110080:1741977414::psm3:core:psmx3_update_hfi_info():459<warn> gpua040.delta.ncsa.illinois.edu:rank1: NIC unit_id 0 STATE = INACTIVE
+libfabric:4110080:1741977414::psm3:core:psmx3_update_hfi_info():459<warn> gpua040.delta.ncsa.illinois.edu:rank1: NIC unit_id 1 STATE = INACTIVE
+libfabric:4110080:1741977414::psm3:core:psmx3_update_hfi_info():459<warn> gpua040.delta.ncsa.illinois.edu:rank1: NIC unit_id 2 STATE = INACTIVE
+libfabric:4110080:1741977414::psm3:core:psmx3_update_hfi_info():459<warn> gpua040.delta.ncsa.illinois.edu:rank1: NIC unit_id 3 STATE = INACTIVE
+libfabric:4110080:1741977414::psm3:core:psmx3_update_hfi_info():459<warn> gpua040.delta.ncsa.illinois.edu:rank1: NIC unit_id 4 STATE = INACTIVE
+libfabric:4110080:1741977414::psm3:core:psmx3_update_hfi_info():459<warn> gpua040.delta.ncsa.illinois.edu:rank1: NIC unit_id 7 STATE = INACTIVE
+libfabric:4110080:1741977414::psm3:core:psmx3_update_hfi_info():533<info> gpua040.delta.ncsa.illinois.edu:rank1: psm3 units: total 8, reported 2, active 2
+libfabric:4110080:1741977414::psm3:core:psmx3_update_hfi_info():543<info> gpua040.delta.ncsa.illinois.edu:rank1: Tx/Rx contexts: 64 allowed per process.
+libfabric:4110080:1741977414::psm3:core:psmx3_update_prov_info():587<info> gpua040.delta.ncsa.illinois.edu:rank1: Using inject_size=64 based on FI_PSM3_INJECT_SIZE=64 with max 16000
+libfabric:4110080:1741977414::psm3:core:psmx3_alter_prov_info():766<info> gpua040.delta.ncsa.illinois.edu:rank1: 3 instances available, 3 with CQ data flag set
+libfabric:4110080:1741977414::psm3:core:psmx3_get_link_speed():561<warn> gpua040.delta.ncsa.illinois.edu:rank1: Failed to query link_attr (speed) for unit -1/0: (null)
+libfabric:4110080:1741977414::psm3:core:psmx3_get_link_speed():561<warn> gpua040.delta.ncsa.illinois.edu:rank1: Failed to query link_attr (speed) for unit 5/0: hsn0
+libfabric:4110080:1741977414::psm3:core:psmx3_update_nic_info():604<warn> gpua040.delta.ncsa.illinois.edu:rank1: Failed to query bus_attr (pci bus) for unit 6
+libfabric:4110080:1741977414::ofi_rxm:core:fi_param_get_():373<info> variable use_srx=<not set>
+libfabric:4110080:1741977414:ofi_rxm:core:core:fi_getinfo_():1387<info> fi_getinfo: provider verbs returned -61 (No data available)
+libfabric:4110080:1741977414:ofi_rxm:core:core:ofi_layering_ok():1266<info> Provider ofi_rxm is excluded
+libfabric:4110080:1741977414:ofi_rxm:core:core:ofi_layering_ok():1277<info> Need core provider, skipping ofi_rxd
+libfabric:4110080:1741977414:ofi_rxm:core:core:ofi_layering_ok():1277<info> Need core provider, skipping ofi_mrail
+libfabric:4110080:1741977414:ofi_rxm:core:core:ofi_layering_ok():1277<info> Need core provider, skipping lnx
+libfabric:4110080:1741977414::ofi_rxm:core:fi_param_get_():373<info> variable use_srx=<not set>
+libfabric:4110080:1741977414:ofi_rxm:core:core:ofi_layering_ok():1266<info> Provider ofi_rxm is excluded
+libfabric:4110080:1741977414:ofi_rxm:core:core:ofi_layering_ok():1277<info> Need core provider, skipping ofi_rxd
+libfabric:4110080:1741977414:ofi_rxm:tcp:core:ofi_check_rx_attr():908<info> size is greater than supported
+libfabric:4110080:1741977414:ofi_rxm:tcp:core:ofi_check_rx_attr():909<info> Supported: 1024
+libfabric:4110080:1741977414:ofi_rxm:tcp:core:ofi_check_rx_attr():909<info> Requested: 4096
+libfabric:4110080:1741977414:ofi_rxm:tcp:core:ofi_check_ep_type():707<info> unsupported endpoint type
+libfabric:4110080:1741977414:ofi_rxm:tcp:core:ofi_check_ep_type():708<info> Supported: FI_EP_RDM
+libfabric:4110080:1741977414:ofi_rxm:tcp:core:ofi_check_ep_type():708<info> Requested: FI_EP_MSG
+libfabric:4110080:1741977414:ofi_rxm:tcp:core:fi_param_get_():373<info> variable iface=<not set>
+libfabric:4110080:1741977414:ofi_rxm:tcp:core:ofi_get_list_of_addr():2130<info> Available addr: 172.28.23.40, iface name: eth1, speed: 1000
+libfabric:4110080:1741977414:ofi_rxm:tcp:core:ofi_get_list_of_addr():2130<info> Available addr: 172.28.86.40, iface name: hsn0, speed: 200000
+libfabric:4110080:1741977414:ofi_rxm:tcp:core:ofi_get_list_of_addr():2130<info> Available addr: 141.142.254.40, iface name: hsn0.561, speed: 200000
+libfabric:4110080:1741977414:ofi_rxm:tcp:core:ofi_get_list_of_addr():2130<info> Available addr: fe80::e19b:191f:55a3:e6fe, iface name: eth1, speed: 1000
+libfabric:4110080:1741977414:ofi_rxm:tcp:core:ofi_get_list_of_addr():2130<info> Available addr: fe80::8c81:a177:36f7:733d, iface name: hsn0, speed: 200000
+libfabric:4110080:1741977414:ofi_rxm:tcp:core:ofi_get_list_of_addr():2130<info> Available addr: fe80::f5be:56d3:8f95:1a6f, iface name: hsn0.561, speed: 200000
+libfabric:4110080:1741977414:ofi_rxm:tcp:core:ofi_insert_loopback_addr():1960<info> available addr: : fi_sockaddr_in://127.0.0.1:0
+libfabric:4110080:1741977414:ofi_rxm:tcp:core:ofi_insert_loopback_addr():1975<info> available addr: : fi_sockaddr_in6://[::1]:0
+libfabric:4110080:1741977414:ofi_rxm:tcp:core:util_getinfo_ifs():404<info> Chosen addr for using: 141.142.254.40, speed 200000
+libfabric:4110080:1741977414:ofi_rxm:core:core:ofi_layering_ok():1277<info> Need core provider, skipping ofi_mrail
+libfabric:4110080:1741977414:ofi_rxm:core:core:ofi_layering_ok():1277<info> Need core provider, skipping lnx
+libfabric:4110080:1741977414::ofi_rxm:core:fi_param_get_():373<info> variable use_srx=<not set>
+libfabric:4110080:1741977414:ofi_rxm:core:core:ofi_layering_ok():1283<info> Skipping util;efa layering
+libfabric:4110080:1741977414:ofi_rxm:core:core:fi_getinfo_():1387<info> fi_getinfo: provider verbs returned -61 (No data available)
+libfabric:4110080:1741977414:ofi_rxm:core:core:ofi_layering_ok():1283<info> Skipping util;cxi layering
+libfabric:4110080:1741977414:ofi_rxm:core:core:ofi_layering_ok():1283<info> Skipping util;psm3 layering
+libfabric:4110080:1741977414:ofi_rxm:core:core:ofi_layering_ok():1277<info> Need core provider, skipping ofi_rxm
+libfabric:4110080:1741977414:ofi_rxm:core:core:ofi_layering_ok():1277<info> Need core provider, skipping ofi_rxd
+libfabric:4110080:1741977414:ofi_rxm:core:core:ofi_layering_ok():1283<info> Skipping util;shm layering
+libfabric:4110080:1741977414:ofi_rxm:udp:core:ofi_check_ep_type():707<info> unsupported endpoint type
+libfabric:4110080:1741977414:ofi_rxm:udp:core:ofi_check_ep_type():708<info> Supported: FI_EP_DGRAM
+libfabric:4110080:1741977414:ofi_rxm:udp:core:ofi_check_ep_type():708<info> Requested: FI_EP_MSG
+libfabric:4110080:1741977414:ofi_rxm:core:core:fi_getinfo_():1387<info> fi_getinfo: provider udp returned -61 (No data available)
+libfabric:4110080:1741977414:ofi_rxm:tcp:core:ofi_check_ep_attr():792<info> Provider requires use of shared rx context
+libfabric:4110080:1741977414:ofi_rxm:tcp:core:ofi_check_ep_type():707<info> unsupported endpoint type
+libfabric:4110080:1741977414:ofi_rxm:tcp:core:ofi_check_ep_type():708<info> Supported: FI_EP_RDM
+libfabric:4110080:1741977414:ofi_rxm:tcp:core:ofi_check_ep_type():708<info> Requested: FI_EP_MSG
+libfabric:4110080:1741977414:ofi_rxm:tcp:core:fi_param_get_():373<info> variable iface=<not set>
+libfabric:4110080:1741977414:ofi_rxm:tcp:core:ofi_get_list_of_addr():2130<info> Available addr: 172.28.23.40, iface name: eth1, speed: 1000
+libfabric:4110080:1741977414:ofi_rxm:tcp:core:ofi_get_list_of_addr():2130<info> Available addr: 172.28.86.40, iface name: hsn0, speed: 200000
+libfabric:4110080:1741977414:ofi_rxm:tcp:core:ofi_get_list_of_addr():2130<info> Available addr: 141.142.254.40, iface name: hsn0.561, speed: 200000
+libfabric:4110080:1741977414:ofi_rxm:tcp:core:ofi_get_list_of_addr():2130<info> Available addr: fe80::e19b:191f:55a3:e6fe, iface name: eth1, speed: 1000
+libfabric:4110080:1741977414:ofi_rxm:tcp:core:ofi_get_list_of_addr():2130<info> Available addr: fe80::8c81:a177:36f7:733d, iface name: hsn0, speed: 200000
+libfabric:4110080:1741977414:ofi_rxm:tcp:core:ofi_get_list_of_addr():2130<info> Available addr: fe80::f5be:56d3:8f95:1a6f, iface name: hsn0.561, speed: 200000
+libfabric:4110080:1741977414:ofi_rxm:tcp:core:ofi_insert_loopback_addr():1960<info> available addr: : fi_sockaddr_in://127.0.0.1:0
+libfabric:4110080:1741977414:ofi_rxm:tcp:core:ofi_insert_loopback_addr():1975<info> available addr: : fi_sockaddr_in6://[::1]:0
+libfabric:4110080:1741977414:ofi_rxm:tcp:core:util_getinfo_ifs():404<info> Chosen addr for using: 141.142.254.40, speed 200000
+libfabric:4110080:1741977414:ofi_rxm:core:core:ofi_layering_ok():1283<info> Skipping util;sockets layering
+libfabric:4110080:1741977414:ofi_rxm:sm2:core:ofi_check_ep_type():707<info> unsupported endpoint type
+libfabric:4110080:1741977414:ofi_rxm:sm2:core:ofi_check_ep_type():708<info> Supported: FI_EP_RDM
+libfabric:4110080:1741977414:ofi_rxm:sm2:core:ofi_check_ep_type():708<info> Requested: FI_EP_MSG
+libfabric:4110080:1741977414:ofi_rxm:sm2:core:ofi_check_ep_type():707<info> unsupported endpoint type
+libfabric:4110080:1741977414:ofi_rxm:sm2:core:ofi_check_ep_type():708<info> Supported: FI_EP_RDM
+libfabric:4110080:1741977414:ofi_rxm:sm2:core:ofi_check_ep_type():708<info> Requested: FI_EP_MSG
+libfabric:4110080:1741977414:ofi_rxm:core:core:fi_getinfo_():1387<info> fi_getinfo: provider sm2 returned -61 (No data available)
+libfabric:4110080:1741977414:ofi_rxm:core:core:ofi_layering_ok():1277<info> Need core provider, skipping ofi_mrail
+libfabric:4110080:1741977414:ofi_rxm:core:core:ofi_layering_ok():1277<info> Need core provider, skipping lnx
+libfabric:4110080:1741977414::ofi_rxm:core:fi_param_get_():373<info> variable use_srx=<not set>
+libfabric:4110080:1741977414:ofi_rxm:core:core:ofi_layering_ok():1283<info> Skipping util;efa layering
+libfabric:4110080:1741977414:ofi_rxm:core:core:fi_getinfo_():1387<info> fi_getinfo: provider verbs returned -61 (No data available)
+libfabric:4110080:1741977414:ofi_rxm:core:core:ofi_layering_ok():1283<info> Skipping util;cxi layering
+libfabric:4110080:1741977414:ofi_rxm:core:core:ofi_layering_ok():1283<info> Skipping util;psm3 layering
+libfabric:4110080:1741977414:ofi_rxm:core:core:ofi_layering_ok():1277<info> Need core provider, skipping ofi_rxm
+libfabric:4110080:1741977414:ofi_rxm:core:core:ofi_layering_ok():1277<info> Need core provider, skipping ofi_rxd
+libfabric:4110080:1741977414:ofi_rxm:core:core:ofi_layering_ok():1283<info> Skipping util;shm layering
+libfabric:4110080:1741977414:ofi_rxm:udp:core:ofi_check_ep_type():707<info> unsupported endpoint type
+libfabric:4110080:1741977414:ofi_rxm:udp:core:ofi_check_ep_type():708<info> Supported: FI_EP_DGRAM
+libfabric:4110080:1741977414:ofi_rxm:udp:core:ofi_check_ep_type():708<info> Requested: FI_EP_MSG
+libfabric:4110080:1741977414:ofi_rxm:core:core:fi_getinfo_():1387<info> fi_getinfo: provider udp returned -61 (No data available)
+libfabric:4110080:1741977414:ofi_rxm:tcp:core:ofi_check_ep_attr():792<info> Provider requires use of shared rx context
+libfabric:4110080:1741977414:ofi_rxm:tcp:core:ofi_check_ep_type():707<info> unsupported endpoint type
+libfabric:4110080:1741977414:ofi_rxm:tcp:core:ofi_check_ep_type():708<info> Supported: FI_EP_RDM
+libfabric:4110080:1741977414:ofi_rxm:tcp:core:ofi_check_ep_type():708<info> Requested: FI_EP_MSG
+libfabric:4110080:1741977414:ofi_rxm:tcp:core:fi_param_get_():373<info> variable iface=<not set>
+libfabric:4110080:1741977414:ofi_rxm:tcp:core:ofi_get_list_of_addr():2130<info> Available addr: 172.28.23.40, iface name: eth1, speed: 1000
+libfabric:4110080:1741977414:ofi_rxm:tcp:core:ofi_get_list_of_addr():2130<info> Available addr: 172.28.86.40, iface name: hsn0, speed: 200000
+libfabric:4110080:1741977414:ofi_rxm:tcp:core:ofi_get_list_of_addr():2130<info> Available addr: 141.142.254.40, iface name: hsn0.561, speed: 200000
+libfabric:4110080:1741977414:ofi_rxm:tcp:core:ofi_get_list_of_addr():2130<info> Available addr: fe80::e19b:191f:55a3:e6fe, iface name: eth1, speed: 1000
+libfabric:4110080:1741977414:ofi_rxm:tcp:core:ofi_get_list_of_addr():2130<info> Available addr: fe80::8c81:a177:36f7:733d, iface name: hsn0, speed: 200000
+libfabric:4110080:1741977414:ofi_rxm:tcp:core:ofi_get_list_of_addr():2130<info> Available addr: fe80::f5be:56d3:8f95:1a6f, iface name: hsn0.561, speed: 200000
+libfabric:4110080:1741977414:ofi_rxm:tcp:core:ofi_insert_loopback_addr():1960<info> available addr: : fi_sockaddr_in://127.0.0.1:0
+libfabric:4110080:1741977414:ofi_rxm:tcp:core:ofi_insert_loopback_addr():1975<info> available addr: : fi_sockaddr_in6://[::1]:0
+libfabric:4110080:1741977414:ofi_rxm:tcp:core:util_getinfo_ifs():404<info> Chosen addr for using: 141.142.254.40, speed 200000
+libfabric:4110080:1741977414:ofi_rxm:core:core:ofi_layering_ok():1283<info> Skipping util;sockets layering
+libfabric:4110080:1741977414:ofi_rxm:sm2:core:ofi_check_ep_type():707<info> unsupported endpoint type
+libfabric:4110080:1741977414:ofi_rxm:sm2:core:ofi_check_ep_type():708<info> Supported: FI_EP_RDM
+libfabric:4110080:1741977414:ofi_rxm:sm2:core:ofi_check_ep_type():708<info> Requested: FI_EP_MSG
+libfabric:4110080:1741977414:ofi_rxm:sm2:core:ofi_check_ep_type():707<info> unsupported endpoint type
+libfabric:4110080:1741977414:ofi_rxm:sm2:core:ofi_check_ep_type():708<info> Supported: FI_EP_RDM
+libfabric:4110080:1741977414:ofi_rxm:sm2:core:ofi_check_ep_type():708<info> Requested: FI_EP_MSG
+libfabric:4110080:1741977414:ofi_rxm:core:core:fi_getinfo_():1387<info> fi_getinfo: provider sm2 returned -61 (No data available)
+libfabric:4110080:1741977414:ofi_rxm:core:core:ofi_layering_ok():1277<info> Need core provider, skipping ofi_mrail
+libfabric:4110080:1741977414:ofi_rxm:core:core:ofi_layering_ok():1277<info> Need core provider, skipping lnx
+libfabric:4110080:1741977414:ofi_rxd:core:core:ofi_layering_ok():1283<info> Skipping util;efa layering
+libfabric:4110080:1741977414:ofi_rxd:core:core:fi_getinfo_():1387<info> fi_getinfo: provider verbs returned -61 (No data available)
+libfabric:4110080:1741977414:ofi_rxd:core:core:ofi_layering_ok():1283<info> Skipping util;cxi layering
+libfabric:4110080:1741977414:ofi_rxd:core:core:ofi_layering_ok():1283<info> Skipping util;psm3 layering
+libfabric:4110080:1741977414:ofi_rxd:core:core:ofi_layering_ok():1277<info> Need core provider, skipping ofi_rxm
+libfabric:4110080:1741977414:ofi_rxd:core:core:ofi_layering_ok():1277<info> Need core provider, skipping ofi_rxd
+libfabric:4110080:1741977414:ofi_rxd:core:core:ofi_layering_ok():1283<info> Skipping util;shm layering
+libfabric:4110080:1741977414:ofi_rxd:udp:core:fi_param_get_():373<info> variable iface=<not set>
+libfabric:4110080:1741977414:ofi_rxd:udp:core:ofi_get_list_of_addr():2130<info> Available addr: 172.28.23.40, iface name: eth1, speed: 1000
+libfabric:4110080:1741977414:ofi_rxd:udp:core:ofi_get_list_of_addr():2130<info> Available addr: 172.28.86.40, iface name: hsn0, speed: 200000
+libfabric:4110080:1741977414:ofi_rxd:udp:core:ofi_get_list_of_addr():2130<info> Available addr: 141.142.254.40, iface name: hsn0.561, speed: 200000
+libfabric:4110080:1741977414:ofi_rxd:udp:core:ofi_get_list_of_addr():2130<info> Available addr: fe80::e19b:191f:55a3:e6fe, iface name: eth1, speed: 1000
+libfabric:4110080:1741977414:ofi_rxd:udp:core:ofi_get_list_of_addr():2130<info> Available addr: fe80::8c81:a177:36f7:733d, iface name: hsn0, speed: 200000
+libfabric:4110080:1741977414:ofi_rxd:udp:core:ofi_get_list_of_addr():2130<info> Available addr: fe80::f5be:56d3:8f95:1a6f, iface name: hsn0.561, speed: 200000
+libfabric:4110080:1741977414:ofi_rxd:udp:core:ofi_insert_loopback_addr():1960<info> available addr: : fi_sockaddr_in://127.0.0.1:0
+libfabric:4110080:1741977414:ofi_rxd:udp:core:ofi_insert_loopback_addr():1975<info> available addr: : fi_sockaddr_in6://[::1]:0
+libfabric:4110080:1741977414:ofi_rxd:udp:core:util_getinfo_ifs():404<info> Chosen addr for using: 141.142.254.40, speed 200000
+libfabric:4110080:1741977414:ofi_rxd:tcp:core:ofi_check_ep_type():707<info> unsupported endpoint type
+libfabric:4110080:1741977414:ofi_rxd:tcp:core:ofi_check_ep_type():708<info> Supported: FI_EP_MSG
+libfabric:4110080:1741977414:ofi_rxd:tcp:core:ofi_check_ep_type():708<info> Requested: FI_EP_DGRAM
+libfabric:4110080:1741977414:ofi_rxd:tcp:core:ofi_check_ep_type():707<info> unsupported endpoint type
+libfabric:4110080:1741977414:ofi_rxd:tcp:core:ofi_check_ep_type():708<info> Supported: FI_EP_MSG
+libfabric:4110080:1741977414:ofi_rxd:tcp:core:ofi_check_ep_type():708<info> Requested: FI_EP_DGRAM
+libfabric:4110080:1741977414:ofi_rxd:tcp:core:ofi_check_ep_type():707<info> unsupported endpoint type
+libfabric:4110080:1741977414:ofi_rxd:tcp:core:ofi_check_ep_type():708<info> Supported: FI_EP_RDM
+libfabric:4110080:1741977414:ofi_rxd:tcp:core:ofi_check_ep_type():708<info> Requested: FI_EP_DGRAM
+libfabric:4110080:1741977414:ofi_rxd:core:core:fi_getinfo_():1387<info> fi_getinfo: provider tcp returned -61 (No data available)
+libfabric:4110080:1741977414:ofi_rxd:core:core:ofi_layering_ok():1283<info> Skipping util;sockets layering
+libfabric:4110080:1741977414:ofi_rxd:sm2:core:ofi_check_ep_type():707<info> unsupported endpoint type
+libfabric:4110080:1741977414:ofi_rxd:sm2:core:ofi_check_ep_type():708<info> Supported: FI_EP_RDM
+libfabric:4110080:1741977414:ofi_rxd:sm2:core:ofi_check_ep_type():708<info> Requested: FI_EP_DGRAM
+libfabric:4110080:1741977414:ofi_rxd:sm2:core:ofi_check_ep_type():707<info> unsupported endpoint type
+libfabric:4110080:1741977414:ofi_rxd:sm2:core:ofi_check_ep_type():708<info> Supported: FI_EP_RDM
+libfabric:4110080:1741977414:ofi_rxd:sm2:core:ofi_check_ep_type():708<info> Requested: FI_EP_DGRAM
+libfabric:4110080:1741977414:ofi_rxd:core:core:fi_getinfo_():1387<info> fi_getinfo: provider sm2 returned -61 (No data available)
+libfabric:4110080:1741977414:ofi_rxd:core:core:ofi_layering_ok():1277<info> Need core provider, skipping ofi_mrail
+libfabric:4110080:1741977414:ofi_rxd:core:core:ofi_layering_ok():1277<info> Need core provider, skipping lnx
+libfabric:4110080:1741977414::shm:core:ofi_check_info():1110<info> Unsupported capabilities
+libfabric:4110080:1741977414::shm:core:ofi_check_info():1111<info> Supported: FI_MSG, FI_RMA, FI_TAGGED, FI_ATOMIC, FI_READ, FI_WRITE, FI_RECV, FI_SEND, FI_REMOTE_READ, FI_REMOTE_WRITE, FI_MULTI_RECV, FI_LOCAL_COMM, FI_RMA_EVENT, FI_SOURCE, FI_DIRECTED_RECV, FI_AV_USER_ID, FI_PEER
+libfabric:4110080:1741977414::shm:core:ofi_check_info():1111<info> Requested: FI_MSG, FI_TAGGED, FI_LOCAL_COMM, FI_REMOTE_COMM, FI_DIRECTED_RECV
+libfabric:4110080:1741977414::shm:core:ofi_check_info():1110<info> Unsupported capabilities
+libfabric:4110080:1741977414::shm:core:ofi_check_info():1111<info> Supported: FI_MSG, FI_RMA, FI_TAGGED, FI_ATOMIC, FI_READ, FI_WRITE, FI_RECV, FI_SEND, FI_REMOTE_READ, FI_REMOTE_WRITE, FI_MULTI_RECV, FI_LOCAL_COMM, FI_RMA_EVENT, FI_SOURCE, FI_DIRECTED_RECV, FI_AV_USER_ID, FI_PEER, FI_HMEM
+libfabric:4110080:1741977414::shm:core:ofi_check_info():1111<info> Requested: FI_MSG, FI_TAGGED, FI_LOCAL_COMM, FI_REMOTE_COMM, FI_DIRECTED_RECV
+libfabric:4110080:1741977414::core:core:fi_getinfo_():1387<info> fi_getinfo: provider shm returned -61 (No data available)
+libfabric:4110080:1741977414::udp:core:ofi_check_ep_type():707<info> unsupported endpoint type
+libfabric:4110080:1741977414::udp:core:ofi_check_ep_type():708<info> Supported: FI_EP_DGRAM
+libfabric:4110080:1741977414::udp:core:ofi_check_ep_type():708<info> Requested: FI_EP_RDM
+libfabric:4110080:1741977414::core:core:fi_getinfo_():1387<info> fi_getinfo: provider udp returned -61 (No data available)
+libfabric:4110080:1741977414::tcp:core:ofi_check_ep_type():707<info> unsupported endpoint type
+libfabric:4110080:1741977414::tcp:core:ofi_check_ep_type():708<info> Supported: FI_EP_MSG
+libfabric:4110080:1741977414::tcp:core:ofi_check_ep_type():708<info> Requested: FI_EP_RDM
+libfabric:4110080:1741977414::tcp:core:ofi_check_ep_type():707<info> unsupported endpoint type
+libfabric:4110080:1741977414::tcp:core:ofi_check_ep_type():708<info> Supported: FI_EP_MSG
+libfabric:4110080:1741977414::tcp:core:ofi_check_ep_type():708<info> Requested: FI_EP_RDM
+libfabric:4110080:1741977414::tcp:core:fi_param_get_():373<info> variable iface=<not set>
+libfabric:4110080:1741977414::tcp:core:ofi_get_list_of_addr():2130<info> Available addr: 172.28.23.40, iface name: eth1, speed: 1000
+libfabric:4110080:1741977414::tcp:core:ofi_get_list_of_addr():2130<info> Available addr: 172.28.86.40, iface name: hsn0, speed: 200000
+libfabric:4110080:1741977414::tcp:core:ofi_get_list_of_addr():2130<info> Available addr: 141.142.254.40, iface name: hsn0.561, speed: 200000
+libfabric:4110080:1741977414::tcp:core:ofi_get_list_of_addr():2130<info> Available addr: fe80::e19b:191f:55a3:e6fe, iface name: eth1, speed: 1000
+libfabric:4110080:1741977414::tcp:core:ofi_get_list_of_addr():2130<info> Available addr: fe80::8c81:a177:36f7:733d, iface name: hsn0, speed: 200000
+libfabric:4110080:1741977414::tcp:core:ofi_get_list_of_addr():2130<info> Available addr: fe80::f5be:56d3:8f95:1a6f, iface name: hsn0.561, speed: 200000
+libfabric:4110080:1741977414::tcp:core:ofi_insert_loopback_addr():1960<info> available addr: : fi_sockaddr_in://127.0.0.1:0
+libfabric:4110080:1741977414::tcp:core:ofi_insert_loopback_addr():1975<info> available addr: : fi_sockaddr_in6://[::1]:0
+libfabric:4110080:1741977414::tcp:core:util_getinfo_ifs():404<info> Chosen addr for using: 141.142.254.40, speed 200000
+libfabric:4110080:1741977414::sockets:core:ofi_check_ep_type():707<info> unsupported endpoint type
+libfabric:4110080:1741977414::sockets:core:ofi_check_ep_type():708<info> Supported: FI_EP_DGRAM
+libfabric:4110080:1741977414::sockets:core:ofi_check_ep_type():708<info> Requested: FI_EP_RDM
+libfabric:4110080:1741977414::sockets:core:ofi_check_ep_type():707<info> unsupported endpoint type
+libfabric:4110080:1741977414::sockets:core:ofi_check_ep_type():708<info> Supported: FI_EP_MSG
+libfabric:4110080:1741977414::sockets:core:ofi_check_ep_type():708<info> Requested: FI_EP_RDM
+libfabric:4110080:1741977414::sockets:core:fi_param_get_():373<info> variable iface=<not set>
+libfabric:4110080:1741977414::sockets:core:ofi_get_list_of_addr():2130<info> Available addr: 172.28.23.40, iface name: eth1, speed: 1000
+libfabric:4110080:1741977414::sockets:core:ofi_get_list_of_addr():2130<info> Available addr: 172.28.86.40, iface name: hsn0, speed: 200000
+libfabric:4110080:1741977414::sockets:core:ofi_get_list_of_addr():2130<info> Available addr: 141.142.254.40, iface name: hsn0.561, speed: 200000
+libfabric:4110080:1741977414::sockets:core:ofi_get_list_of_addr():2130<info> Available addr: fe80::e19b:191f:55a3:e6fe, iface name: eth1, speed: 1000
+libfabric:4110080:1741977414::sockets:core:ofi_get_list_of_addr():2130<info> Available addr: fe80::8c81:a177:36f7:733d, iface name: hsn0, speed: 200000
+libfabric:4110080:1741977414::sockets:core:ofi_get_list_of_addr():2130<info> Available addr: fe80::f5be:56d3:8f95:1a6f, iface name: hsn0.561, speed: 200000
+libfabric:4110080:1741977414::sockets:core:ofi_insert_loopback_addr():1960<info> available addr: : fi_sockaddr_in://127.0.0.1:0
+libfabric:4110080:1741977414::sockets:core:ofi_insert_loopback_addr():1975<info> available addr: : fi_sockaddr_in6://[::1]:0
+libfabric:4110080:1741977414::sockets:core:util_getinfo_ifs():404<info> Chosen addr for using: 141.142.254.40, speed 200000
+libfabric:4110080:1741977414::sm2:core:ofi_check_info():1110<info> Unsupported capabilities
+libfabric:4110080:1741977414::sm2:core:ofi_check_info():1111<info> Supported: FI_MSG, FI_TAGGED, FI_ATOMIC, FI_READ, FI_WRITE, FI_RECV, FI_SEND, FI_REMOTE_READ, FI_REMOTE_WRITE, FI_MULTI_RECV, FI_LOCAL_COMM, FI_RMA_EVENT, FI_SOURCE, FI_DIRECTED_RECV
+libfabric:4110080:1741977414::sm2:core:ofi_check_info():1111<info> Requested: FI_MSG, FI_TAGGED, FI_LOCAL_COMM, FI_REMOTE_COMM, FI_DIRECTED_RECV
+libfabric:4110080:1741977414::sm2:core:ofi_check_info():1110<info> Unsupported capabilities
+libfabric:4110080:1741977414::sm2:core:ofi_check_info():1111<info> Supported: FI_MSG, FI_TAGGED, FI_READ, FI_WRITE, FI_RECV, FI_SEND, FI_REMOTE_READ, FI_REMOTE_WRITE, FI_MULTI_RECV, FI_LOCAL_COMM, FI_RMA_EVENT, FI_SOURCE, FI_DIRECTED_RECV, FI_HMEM
+libfabric:4110080:1741977414::sm2:core:ofi_check_info():1111<info> Requested: FI_MSG, FI_TAGGED, FI_LOCAL_COMM, FI_REMOTE_COMM, FI_DIRECTED_RECV
+libfabric:4110080:1741977414::core:core:fi_getinfo_():1387<info> fi_getinfo: provider sm2 returned -61 (No data available)
+libfabric:4110080:1741977414::ofi_mrail:fabric:mrail_get_core_info():286<info> OFI_MRAIL_ADDR_STRC env variable not set!
+libfabric:4110080:1741977414::core:core:fi_getinfo_():1387<info> fi_getinfo: provider ofi_mrail returned -61 (No data available)
+libfabric:4110080:1741977414::lnx:core:fi_param_get_():382<info> read string var prov_links=shm+cxi
+libfabric:4110080:1741977414::core:core:ofi_layering_ok():1303<info> Skipping shm;ofi_rxm layering
+libfabric:4110080:1741977414::core:core:ofi_layering_ok():1303<info> Skipping shm;ofi_rxd layering
+libfabric:4110080:1741977414::shm:core:ofi_check_info():1110<info> Unsupported capabilities
+libfabric:4110080:1741977414::shm:core:ofi_check_info():1111<info> Supported: FI_MSG, FI_RMA, FI_TAGGED, FI_ATOMIC, FI_READ, FI_WRITE, FI_RECV, FI_SEND, FI_REMOTE_READ, FI_REMOTE_WRITE, FI_MULTI_RECV, FI_LOCAL_COMM, FI_RMA_EVENT, FI_SOURCE, FI_DIRECTED_RECV, FI_AV_USER_ID, FI_PEER
+libfabric:4110080:1741977414::shm:core:ofi_check_info():1111<info> Requested: FI_MSG, FI_TAGGED, FI_DIRECTED_RECV, FI_PEER, FI_HMEM
+libfabric:4110080:1741977414::core:core:ofi_layering_ok():1303<info> Skipping shm;ofi_mrail layering
+libfabric:4110080:1741977414::cxi:core:ofi_check_info():1110<info> Unsupported capabilities
+libfabric:4110080:1741977414::cxi:core:ofi_check_info():1111<info> Supported: FI_MSG, FI_RMA, FI_TAGGED, FI_ATOMIC, FI_COLLECTIVE, FI_READ, FI_WRITE, FI_RECV, FI_SEND, FI_REMOTE_READ, FI_REMOTE_WRITE, FI_MULTI_RECV, FI_TRIGGER, FI_FENCE, FI_SOURCE_ERR, FI_LOCAL_COMM, FI_REMOTE_COMM, FI_RMA_EVENT, FI_SOURCE, FI_NAMED_RX_CTX, FI_AV_USER_ID, FI_PEER, FI_HMEM
+libfabric:4110080:1741977414::cxi:core:ofi_check_info():1111<info> Requested: FI_MSG, FI_TAGGED, FI_LOCAL_COMM, FI_REMOTE_COMM, FI_DIRECTED_RECV, FI_PEER
+libfabric:4110080:1741977414::cxi:core:ofi_check_info():1110<info> Unsupported capabilities
+libfabric:4110080:1741977414::cxi:core:ofi_check_info():1111<info> Supported: FI_MSG, FI_RMA, FI_TAGGED, FI_ATOMIC, FI_COLLECTIVE, FI_READ, FI_WRITE, FI_RECV, FI_SEND, FI_REMOTE_READ, FI_REMOTE_WRITE, FI_MULTI_RECV, FI_TRIGGER, FI_FENCE, FI_SOURCE_ERR, FI_LOCAL_COMM, FI_REMOTE_COMM, FI_RMA_EVENT, FI_SOURCE, FI_NAMED_RX_CTX, FI_AV_USER_ID, FI_PEER, FI_HMEM
+libfabric:4110080:1741977414::cxi:core:ofi_check_info():1111<info> Requested: FI_MSG, FI_TAGGED, FI_LOCAL_COMM, FI_REMOTE_COMM, FI_DIRECTED_RECV, FI_PEER
+libfabric:4110080:1741977414::cxi:core:ofi_check_rx_attr():887<info> msg_order not supported
+libfabric:4110080:1741977414::cxi:core:ofi_check_rx_attr():889<info> Supported: FI_ORDER_WAW, FI_ORDER_RMA_RAR, FI_ORDER_RMA_WAW, FI_ORDER_ATOMIC_RAR, FI_ORDER_ATOMIC_WAW
+libfabric:4110080:1741977414::cxi:core:ofi_check_rx_attr():889<info> Requested: FI_ORDER_SAS
+libfabric:4110080:1741977414::cxi:core:ofi_check_rx_attr():887<info> msg_order not supported
+libfabric:4110080:1741977414::cxi:core:ofi_check_rx_attr():889<info> Supported: FI_ORDER_WAW, FI_ORDER_RMA_RAR, FI_ORDER_RMA_WAW, FI_ORDER_ATOMIC_RAR, FI_ORDER_ATOMIC_WAW
+libfabric:4110080:1741977414::cxi:core:ofi_check_rx_attr():889<info> Requested: FI_ORDER_SAS
+libfabric:4110080:1741977414::cxi:core:ofi_check_rx_attr():887<info> msg_order not supported
+libfabric:4110080:1741977414::cxi:core:ofi_check_rx_attr():889<info> Supported: FI_ORDER_WAW, FI_ORDER_RMA_RAR, FI_ORDER_RMA_WAW, FI_ORDER_ATOMIC_RAR, FI_ORDER_ATOMIC_WAW
+libfabric:4110080:1741977414::cxi:core:ofi_check_rx_attr():889<info> Requested: FI_ORDER_SAS
+libfabric:4110080:1741977414::cxi:core:ofi_check_rx_attr():887<info> msg_order not supported
+libfabric:4110080:1741977414::cxi:core:ofi_check_rx_attr():889<info> Supported: FI_ORDER_WAW, FI_ORDER_RMA_RAR, FI_ORDER_RMA_WAW, FI_ORDER_ATOMIC_RAR, FI_ORDER_ATOMIC_WAW
+libfabric:4110080:1741977414::cxi:core:ofi_check_rx_attr():889<info> Requested: FI_ORDER_SAS
+libfabric:4110080:1741977414::cxi:fabric:cxip_nic_get_ss_env_get_vni():23<info> gpua040.delta.ncsa.illinois.edu: SLINGSHOT_VNIS not found
+libfabric:4110080:1741977414::cxi:fabric:cxip_nic_get_best_rgroup_vni():236<info> gpua040.delta.ncsa.illinois.edu: Found (1:1) for cxi0
+libfabric:4110080:1741977414::cxi:fabric:cxip_nic_get_ss_env_get_vni():23<info> gpua040.delta.ncsa.illinois.edu: SLINGSHOT_VNIS not found
+libfabric:4110080:1741977414::cxi:fabric:cxip_nic_get_best_rgroup_vni():236<info> gpua040.delta.ncsa.illinois.edu: Found (1:1) for cxi0
+libfabric:4110080:1741977414::core:core:ofi_layering_ok():1303<info> Skipping cxi;ofi_rxm layering
+libfabric:4110080:1741977414::core:core:ofi_layering_ok():1303<info> Skipping cxi;ofi_rxd layering
+libfabric:4110080:1741977414::core:core:ofi_layering_ok():1303<info> Skipping cxi;ofi_mrail layering
+libfabric:4110080:1741977414::core:mr:ofi_monitor_import():192<info> setting imported memory monitor as default
+libfabric:4110080:1741977414::core:core:fi_fabric_():1592<info> Opened fabric: cxi
+libfabric:4110080:1741977414::core:core:fi_fabric_():1603<info> Using cxi provider 2.1, path:/u/bwibking/mpi_install/lib/libfabric.so.1
+libfabric:4110080:1741977414::cxi:core:ofi_check_rx_attr():864<info> Tx only caps ignored in Rx caps
+libfabric:4110080:1741977414::cxi:core:ofi_check_tx_attr():953<info> Rx only caps ignored in Tx caps
+libfabric:4110080:1741977414::cxi:core:ofi_check_rx_attr():864<info> Tx only caps ignored in Rx caps
+libfabric:4110080:1741977414::cxi:core:ofi_check_tx_attr():953<info> Rx only caps ignored in Tx caps
+libfabric:4110080:1741977414::cxi:core:ofi_check_info():1110<info> Unsupported capabilities
+libfabric:4110080:1741977414::cxi:core:ofi_check_info():1111<info> Supported: FI_MSG, FI_RMA, FI_TAGGED, FI_ATOMIC, FI_COLLECTIVE, FI_READ, FI_WRITE, FI_RECV, FI_SEND, FI_REMOTE_READ, FI_REMOTE_WRITE, FI_MULTI_RECV, FI_TRIGGER, FI_FENCE, FI_SOURCE_ERR, FI_LOCAL_COMM, FI_REMOTE_COMM, FI_RMA_EVENT, FI_SOURCE, FI_NAMED_RX_CTX, FI_AV_USER_ID, FI_PEER, FI_HMEM
+libfabric:4110080:1741977414::cxi:core:ofi_check_info():1111<info> Requested: FI_MSG, FI_TAGGED, FI_RECV, FI_SEND, FI_MULTI_RECV, FI_TRIGGER, FI_LOCAL_COMM, FI_REMOTE_COMM, FI_DIRECTED_RECV
+libfabric:4110080:1741977414::cxi:core:ofi_check_info():1110<info> Unsupported capabilities
+libfabric:4110080:1741977414::cxi:core:ofi_check_info():1111<info> Supported: FI_MSG, FI_RMA, FI_TAGGED, FI_ATOMIC, FI_COLLECTIVE, FI_READ, FI_WRITE, FI_RECV, FI_SEND, FI_REMOTE_READ, FI_REMOTE_WRITE, FI_MULTI_RECV, FI_TRIGGER, FI_FENCE, FI_SOURCE_ERR, FI_LOCAL_COMM, FI_REMOTE_COMM, FI_RMA_EVENT, FI_SOURCE, FI_NAMED_RX_CTX, FI_AV_USER_ID, FI_PEER, FI_HMEM
+libfabric:4110080:1741977414::cxi:core:ofi_check_info():1111<info> Requested: FI_MSG, FI_TAGGED, FI_RECV, FI_SEND, FI_MULTI_RECV, FI_TRIGGER, FI_LOCAL_COMM, FI_REMOTE_COMM, FI_DIRECTED_RECV
+libfabric:4110080:1741977414::cxi:core:ofi_check_ep_attr():735<info> Unsupported protocol
+libfabric:4110080:1741977414::cxi:core:ofi_check_ep_attr():736<info> Supported: FI_PROTO_CXI_RNR
+libfabric:4110080:1741977414::cxi:core:ofi_check_ep_attr():736<info> Requested: FI_PROTO_CXI
+libfabric:4110080:1741977414::cxi:core:ofi_check_ep_attr():735<info> Unsupported protocol
+libfabric:4110080:1741977414::cxi:core:ofi_check_ep_attr():736<info> Supported: FI_PROTO_CXI_RNR
+libfabric:4110080:1741977414::cxi:core:ofi_check_ep_attr():736<info> Requested: FI_PROTO_CXI
+libfabric:4110080:1741977414::cxi:core:ofi_check_ep_attr():735<info> Unsupported protocol
+libfabric:4110080:1741977414::cxi:core:ofi_check_ep_attr():736<info> Supported: FI_PROTO_CXI_RNR
+libfabric:4110080:1741977414::cxi:core:ofi_check_ep_attr():736<info> Requested: FI_PROTO_CXI
+libfabric:4110080:1741977414::cxi:core:ofi_check_ep_attr():735<info> Unsupported protocol
+libfabric:4110080:1741977414::cxi:core:ofi_check_ep_attr():736<info> Supported: FI_PROTO_CXI_RNR
+libfabric:4110080:1741977414::cxi:core:ofi_check_ep_attr():736<info> Requested: FI_PROTO_CXI
+libfabric:4110080:1741977414::cxi:domain:cxip_domain_enable():463<warn> gpua040.delta.ncsa.illinois.edu: Security Issue: Using unrestricted service ID 1 for cxi0. Please provide a service ID via auth_key fields.
+libfabric:4110080:1741977414::cxi:mr:cxip_iomm_init():323<info> gpua040.delta.ncsa.illinois.edu: Domain ATS: 0 ODP: 0 HMEM: 0 Scalable: 0
+libfabric:4110080:1741977414::core:mr:ofi_monitors_update():118<info> Starting memory monitor: import
+libfabric:4110080:1741977414::core:mr:ofi_monitors_update():118<info> Starting memory monitor: cuda
+libfabric:4110080:1741977414::cxi:mr:cxip_iomm_init():350<info> gpua040.delta.ncsa.illinois.edu: MR cache enabled for FI_HMEM_SYSTEM memory
+libfabric:4110080:1741977414::cxi:mr:cxip_iomm_init():350<info> gpua040.delta.ncsa.illinois.edu: MR cache enabled for FI_HMEM_CUDA memory
+libfabric:4110080:1741977414::cxi:domain:cxip_domain_enable():501<info> gpua040.delta.ncsa.illinois.edu: DOM (cxi0:4:1:1:0x176): Domain enabled
+libfabric:4110080:1741977414::cxi:core:ofi_check_rx_attr():864<info> Tx only caps ignored in Rx caps
+libfabric:4110080:1741977414::cxi:core:ofi_check_tx_attr():953<info> Rx only caps ignored in Tx caps
+libfabric:4110080:1741977414::cxi:core:ofi_check_rx_attr():864<info> Tx only caps ignored in Rx caps
+libfabric:4110080:1741977414::cxi:core:ofi_check_tx_attr():953<info> Rx only caps ignored in Tx caps
+libfabric:4110080:1741977414::cxi:core:ofi_check_info():1110<info> Unsupported capabilities
+libfabric:4110080:1741977414::cxi:core:ofi_check_info():1111<info> Supported: FI_MSG, FI_RMA, FI_TAGGED, FI_ATOMIC, FI_COLLECTIVE, FI_READ, FI_WRITE, FI_RECV, FI_SEND, FI_REMOTE_READ, FI_REMOTE_WRITE, FI_MULTI_RECV, FI_TRIGGER, FI_FENCE, FI_SOURCE_ERR, FI_LOCAL_COMM, FI_REMOTE_COMM, FI_RMA_EVENT, FI_SOURCE, FI_NAMED_RX_CTX, FI_AV_USER_ID, FI_PEER, FI_HMEM
+libfabric:4110080:1741977414::cxi:core:ofi_check_info():1111<info> Requested: FI_MSG, FI_TAGGED, FI_RECV, FI_SEND, FI_MULTI_RECV, FI_TRIGGER, FI_LOCAL_COMM, FI_REMOTE_COMM, FI_DIRECTED_RECV
+libfabric:4110080:1741977414::cxi:core:ofi_check_info():1110<info> Unsupported capabilities
+libfabric:4110080:1741977414::cxi:core:ofi_check_info():1111<info> Supported: FI_MSG, FI_RMA, FI_TAGGED, FI_ATOMIC, FI_COLLECTIVE, FI_READ, FI_WRITE, FI_RECV, FI_SEND, FI_REMOTE_READ, FI_REMOTE_WRITE, FI_MULTI_RECV, FI_TRIGGER, FI_FENCE, FI_SOURCE_ERR, FI_LOCAL_COMM, FI_REMOTE_COMM, FI_RMA_EVENT, FI_SOURCE, FI_NAMED_RX_CTX, FI_AV_USER_ID, FI_PEER, FI_HMEM
+libfabric:4110080:1741977414::cxi:core:ofi_check_info():1111<info> Requested: FI_MSG, FI_TAGGED, FI_RECV, FI_SEND, FI_MULTI_RECV, FI_TRIGGER, FI_LOCAL_COMM, FI_REMOTE_COMM, FI_DIRECTED_RECV
+libfabric:4110080:1741977414::cxi:core:ofi_check_ep_attr():735<info> Unsupported protocol
+libfabric:4110080:1741977414::cxi:core:ofi_check_ep_attr():736<info> Supported: FI_PROTO_CXI_RNR
+libfabric:4110080:1741977414::cxi:core:ofi_check_ep_attr():736<info> Requested: FI_PROTO_CXI
+libfabric:4110080:1741977414::cxi:core:ofi_check_ep_attr():735<info> Unsupported protocol
+libfabric:4110080:1741977414::cxi:core:ofi_check_ep_attr():736<info> Supported: FI_PROTO_CXI_RNR
+libfabric:4110080:1741977414::cxi:core:ofi_check_ep_attr():736<info> Requested: FI_PROTO_CXI
+libfabric:4110080:1741977414::cxi:core:ofi_check_ep_attr():735<info> Unsupported protocol
+libfabric:4110080:1741977414::cxi:core:ofi_check_ep_attr():736<info> Supported: FI_PROTO_CXI_RNR
+libfabric:4110080:1741977414::cxi:core:ofi_check_ep_attr():736<info> Requested: FI_PROTO_CXI
+libfabric:4110080:1741977414::cxi:core:ofi_check_ep_attr():735<info> Unsupported protocol
+libfabric:4110080:1741977414::cxi:core:ofi_check_ep_attr():736<info> Supported: FI_PROTO_CXI_RNR
+libfabric:4110080:1741977414::cxi:core:ofi_check_ep_attr():736<info> Requested: FI_PROTO_CXI
+libfabric:4110080:1741977414::cxi:core:fi_param_get_():373<info> variable rx_match_mode=<not set>
+libfabric:4110080:1741977414::cxi:core:fi_param_get_():373<info> variable hybrid_preemptive=<not set>
+libfabric:4110080:1741977414::cxi:core:fi_param_get_():373<info> variable hybrid_recv_preemptive=<not set>
+libfabric:4110080:1741977414::cxi:core:fi_param_get_():373<info> variable hybrid_unexpected_msg_preemptive=<not set>
+libfabric:4110080:1741977414::cxi:core:fi_param_get_():373<info> variable hybrid_posted_recv_preemptive=<not set>
+libfabric:4110080:1741977414::cxi:ep_ctrl:cxip_coll_enable():4346<info> gpua040.delta.ncsa.illinois.edu: FI_COLLECTIVE not requested
+
+# OSU MPI-CUDA Bi-Directional Bandwidth Test v7.5
+# Datatype: MPI_CHAR.
+# Size      Bandwidth (MB/s)
+1                       0.11
+2                       0.21
+4                       0.42
+8                       0.84
+16                      1.66
+32                      3.31
+64                      6.12
+128                    12.14
+256                    24.14
+512                    47.88
+1024                   95.08
+2048                  202.26
+4096                  391.02
+8192                  757.85
+16384                1396.09
+32768                2396.51
+65536                1135.97
+131072               1295.39
+262144               1392.58
+524288               1465.52
+1048576              1482.06
+2097152              1509.62
+4194304              2377.01
+libfabric:4110079:1741977429::cxi:ep_data:cxip_rxc_dump_counters():282<info> gpua040.delta.ncsa.illinois.edu: RXC (0x176:0) PtlTE 20: Recv Message Size PRIORITY - FI_HMEM_SYSTEM Histogram
+libfabric:4110079:1741977429::cxi:ep_data:cxip_rxc_dump_counters():283<info> gpua040.delta.ncsa.illinois.edu: RXC (0x176:0) PtlTE 20: Size           Count
+libfabric:4110079:1741977429::cxi:ep_data:cxip_rxc_dump_counters():288<info> gpua040.delta.ncsa.illinois.edu: RXC (0x176:0) PtlTE 20: 0              17
+libfabric:4110079:1741977429::cxi:ep_data:cxip_rxc_dump_counters():288<info> gpua040.delta.ncsa.illinois.edu: RXC (0x176:0) PtlTE 20: 1              7040
+libfabric:4110079:1741977429::cxi:ep_data:cxip_rxc_dump_counters():288<info> gpua040.delta.ncsa.illinois.edu: RXC (0x176:0) PtlTE 20: 2              7040
+libfabric:4110079:1741977429::cxi:ep_data:cxip_rxc_dump_counters():288<info> gpua040.delta.ncsa.illinois.edu: RXC (0x176:0) PtlTE 20: 4              7040
+libfabric:4110079:1741977429::cxi:ep_data:cxip_rxc_dump_counters():288<info> gpua040.delta.ncsa.illinois.edu: RXC (0x176:0) PtlTE 20: 8              7040
+libfabric:4110079:1741977429::cxi:ep_data:cxip_rxc_dump_counters():288<info> gpua040.delta.ncsa.illinois.edu: RXC (0x176:0) PtlTE 20: 16             7040
+libfabric:4110079:1741977429::cxi:ep_data:cxip_rxc_dump_counters():288<info> gpua040.delta.ncsa.illinois.edu: RXC (0x176:0) PtlTE 20: 32             7040
+libfabric:4110079:1741977429::cxi:ep_data:cxip_rxc_dump_counters():288<info> gpua040.delta.ncsa.illinois.edu: RXC (0x176:0) PtlTE 20: 64             5820
+libfabric:4110079:1741977429::cxi:ep_data:cxip_rxc_dump_counters():288<info> gpua040.delta.ncsa.illinois.edu: RXC (0x176:0) PtlTE 20: 128            7040
+libfabric:4110079:1741977429::cxi:ep_data:cxip_rxc_dump_counters():288<info> gpua040.delta.ncsa.illinois.edu: RXC (0x176:0) PtlTE 20: 256            7040
+libfabric:4110079:1741977429::cxi:ep_data:cxip_rxc_dump_counters():288<info> gpua040.delta.ncsa.illinois.edu: RXC (0x176:0) PtlTE 20: 512            7040
+libfabric:4110079:1741977429::cxi:ep_data:cxip_rxc_dump_counters():288<info> gpua040.delta.ncsa.illinois.edu: RXC (0x176:0) PtlTE 20: 1024           7040
+libfabric:4110079:1741977429::cxi:ep_data:cxip_rxc_dump_counters():288<info> gpua040.delta.ncsa.illinois.edu: RXC (0x176:0) PtlTE 20: 2048           7040
+libfabric:4110079:1741977429::cxi:ep_data:cxip_rxc_dump_counters():288<info> gpua040.delta.ncsa.illinois.edu: RXC (0x176:0) PtlTE 20: 4096           7040
+libfabric:4110079:1741977429::cxi:ep_data:cxip_rxc_dump_counters():288<info> gpua040.delta.ncsa.illinois.edu: RXC (0x176:0) PtlTE 20: 8192           7040
+libfabric:4110079:1741977429::cxi:ep_data:cxip_rxc_dump_counters():288<info> gpua040.delta.ncsa.illinois.edu: RXC (0x176:0) PtlTE 20: 16384          1408
+libfabric:4110079:1741977429::cxi:ep_data:cxip_rxc_dump_counters():288<info> gpua040.delta.ncsa.illinois.edu: RXC (0x176:0) PtlTE 20: 32768          1408
+libfabric:4110079:1741977429::cxi:ep_data:cxip_rxc_dump_counters():288<info> gpua040.delta.ncsa.illinois.edu: RXC (0x176:0) PtlTE 20: 65536          1408
+libfabric:4110079:1741977429::cxi:ep_data:cxip_rxc_dump_counters():288<info> gpua040.delta.ncsa.illinois.edu: RXC (0x176:0) PtlTE 20: 131072         1408
+libfabric:4110079:1741977429::cxi:ep_data:cxip_rxc_dump_counters():288<info> gpua040.delta.ncsa.illinois.edu: RXC (0x176:0) PtlTE 20: 262144         1408
+libfabric:4110079:1741977429::cxi:ep_data:cxip_rxc_dump_counters():288<info> gpua040.delta.ncsa.illinois.edu: RXC (0x176:0) PtlTE 20: 524288         1408
+libfabric:4110079:1741977429::cxi:ep_data:cxip_rxc_dump_counters():288<info> gpua040.delta.ncsa.illinois.edu: RXC (0x176:0) PtlTE 20: 1048576        1408
+libfabric:4110079:1741977429::cxi:ep_data:cxip_rxc_dump_counters():288<info> gpua040.delta.ncsa.illinois.edu: RXC (0x176:0) PtlTE 20: 2097152        1408
+libfabric:4110079:1741977429::cxi:ep_data:cxip_rxc_dump_counters():288<info> gpua040.delta.ncsa.illinois.edu: RXC (0x176:0) PtlTE 20: 4194304        1408
+libfabric:4110079:1741977429::cxi:ep_data:cxip_rxc_dump_counters():282<info> gpua040.delta.ncsa.illinois.edu: RXC (0x176:0) PtlTE 20: Recv Message Size OVERFLOW - FI_HMEM_SYSTEM Histogram
+libfabric:4110079:1741977429::cxi:ep_data:cxip_rxc_dump_counters():283<info> gpua040.delta.ncsa.illinois.edu: RXC (0x176:0) PtlTE 20: Size           Count
+libfabric:4110079:1741977429::cxi:ep_data:cxip_rxc_dump_counters():288<info> gpua040.delta.ncsa.illinois.edu: RXC (0x176:0) PtlTE 20: 0              6
+libfabric:4110079:1741977429::cxi:ep_data:cxip_rxc_dump_counters():288<info> gpua040.delta.ncsa.illinois.edu: RXC (0x176:0) PtlTE 20: 64             1220
+libfabric:4110079:1741977429::cxi:ep_data:cxip_ptelist_bufpool_fini():342<info> gpua040.delta.ncsa.illinois.edu: RXC (0x176:0) PtlTE 20: Number of OVERFLOW buffers allocated 3
+libfabric:4110080:1741977429::cxi:ep_data:cxip_rxc_dump_counters():282<info> gpua040.delta.ncsa.illinois.edu: RXC (0x176:1) PtlTE 23: Recv Message Size PRIORITY - FI_HMEM_SYSTEM Histogram
+libfabric:4110080:1741977429::cxi:ep_data:cxip_rxc_dump_counters():283<info> gpua040.delta.ncsa.illinois.edu: RXC (0x176:1) PtlTE 23: Size           Count
+libfabric:4110080:1741977429::cxi:ep_data:cxip_rxc_dump_counters():288<info> gpua040.delta.ncsa.illinois.edu: RXC (0x176:1) PtlTE 23: 0              6
+libfabric:4110080:1741977429::cxi:ep_data:cxip_rxc_dump_counters():288<info> gpua040.delta.ncsa.illinois.edu: RXC (0x176:1) PtlTE 23: 1              4810
+libfabric:4110080:1741977429::cxi:ep_data:cxip_rxc_dump_counters():288<info> gpua040.delta.ncsa.illinois.edu: RXC (0x176:1) PtlTE 23: 2              3673
+libfabric:4110080:1741977429::cxi:ep_data:cxip_rxc_dump_counters():288<info> gpua040.delta.ncsa.illinois.edu: RXC (0x176:1) PtlTE 23: 4              3464
+libfabric:4110080:1741977429::cxi:ep_data:cxip_rxc_dump_counters():288<info> gpua040.delta.ncsa.illinois.edu: RXC (0x176:1) PtlTE 23: 8              3808
+libfabric:4110080:1741977429::cxi:ep_data:cxip_rxc_dump_counters():288<info> gpua040.delta.ncsa.illinois.edu: RXC (0x176:1) PtlTE 23: 16             3607
+libfabric:4110080:1741977429::cxi:ep_data:cxip_rxc_dump_counters():288<info> gpua040.delta.ncsa.illinois.edu: RXC (0x176:1) PtlTE 23: 32             3642
+libfabric:4110080:1741977429::cxi:ep_data:cxip_rxc_dump_counters():288<info> gpua040.delta.ncsa.illinois.edu: RXC (0x176:1) PtlTE 23: 64             6566
+libfabric:4110080:1741977429::cxi:ep_data:cxip_rxc_dump_counters():288<info> gpua040.delta.ncsa.illinois.edu: RXC (0x176:1) PtlTE 23: 128            3720
+libfabric:4110080:1741977429::cxi:ep_data:cxip_rxc_dump_counters():288<info> gpua040.delta.ncsa.illinois.edu: RXC (0x176:1) PtlTE 23: 256            1837
+libfabric:4110080:1741977429::cxi:ep_data:cxip_rxc_dump_counters():288<info> gpua040.delta.ncsa.illinois.edu: RXC (0x176:1) PtlTE 23: 512            1607
+libfabric:4110080:1741977429::cxi:ep_data:cxip_rxc_dump_counters():288<info> gpua040.delta.ncsa.illinois.edu: RXC (0x176:1) PtlTE 23: 1024           1572
+libfabric:4110080:1741977429::cxi:ep_data:cxip_rxc_dump_counters():288<info> gpua040.delta.ncsa.illinois.edu: RXC (0x176:1) PtlTE 23: 2048           3410
+libfabric:4110080:1741977429::cxi:ep_data:cxip_rxc_dump_counters():288<info> gpua040.delta.ncsa.illinois.edu: RXC (0x176:1) PtlTE 23: 4096           4374
+libfabric:4110080:1741977429::cxi:ep_data:cxip_rxc_dump_counters():288<info> gpua040.delta.ncsa.illinois.edu: RXC (0x176:1) PtlTE 23: 8192           3827
+libfabric:4110080:1741977429::cxi:ep_data:cxip_rxc_dump_counters():288<info> gpua040.delta.ncsa.illinois.edu: RXC (0x176:1) PtlTE 23: 16384          1408
+libfabric:4110080:1741977429::cxi:ep_data:cxip_rxc_dump_counters():288<info> gpua040.delta.ncsa.illinois.edu: RXC (0x176:1) PtlTE 23: 32768          1408
+libfabric:4110080:1741977429::cxi:ep_data:cxip_rxc_dump_counters():288<info> gpua040.delta.ncsa.illinois.edu: RXC (0x176:1) PtlTE 23: 65536          1408
+libfabric:4110080:1741977429::cxi:ep_data:cxip_rxc_dump_counters():288<info> gpua040.delta.ncsa.illinois.edu: RXC (0x176:1) PtlTE 23: 131072         1408
+libfabric:4110080:1741977429::cxi:ep_data:cxip_rxc_dump_counters():288<info> gpua040.delta.ncsa.illinois.edu: RXC (0x176:1) PtlTE 23: 262144         1408
+libfabric:4110080:1741977429::cxi:ep_data:cxip_rxc_dump_counters():288<info> gpua040.delta.ncsa.illinois.edu: RXC (0x176:1) PtlTE 23: 524288         1408
+libfabric:4110080:1741977429::cxi:ep_data:cxip_rxc_dump_counters():288<info> gpua040.delta.ncsa.illinois.edu: RXC (0x176:1) PtlTE 23: 1048576        1408
+libfabric:4110080:1741977429::cxi:ep_data:cxip_rxc_dump_counters():288<info> gpua040.delta.ncsa.illinois.edu: RXC (0x176:1) PtlTE 23: 2097152        1408
+libfabric:4110080:1741977429::cxi:ep_data:cxip_rxc_dump_counters():288<info> gpua040.delta.ncsa.illinois.edu: RXC (0x176:1) PtlTE 23: 4194304        1408
+libfabric:4110080:1741977429::cxi:ep_data:cxip_rxc_dump_counters():282<info> gpua040.delta.ncsa.illinois.edu: RXC (0x176:1) PtlTE 23: Recv Message Size OVERFLOW - FI_HMEM_SYSTEM Histogram
+libfabric:4110080:1741977429::cxi:ep_data:cxip_rxc_dump_counters():283<info> gpua040.delta.ncsa.illinois.edu: RXC (0x176:1) PtlTE 23: Size           Count
+libfabric:4110080:1741977429::cxi:ep_data:cxip_rxc_dump_counters():288<info> gpua040.delta.ncsa.illinois.edu: RXC (0x176:1) PtlTE 23: 0              17
+libfabric:4110080:1741977429::cxi:ep_data:cxip_rxc_dump_counters():288<info> gpua040.delta.ncsa.illinois.edu: RXC (0x176:1) PtlTE 23: 1              2230
+libfabric:4110080:1741977429::cxi:ep_data:cxip_rxc_dump_counters():288<info> gpua040.delta.ncsa.illinois.edu: RXC (0x176:1) PtlTE 23: 2              3367
+libfabric:4110080:1741977429::cxi:ep_data:cxip_rxc_dump_counters():288<info> gpua040.delta.ncsa.illinois.edu: RXC (0x176:1) PtlTE 23: 4              3576
+libfabric:4110080:1741977429::cxi:ep_data:cxip_rxc_dump_counters():288<info> gpua040.delta.ncsa.illinois.edu: RXC (0x176:1) PtlTE 23: 8              3232
+libfabric:4110080:1741977429::cxi:ep_data:cxip_rxc_dump_counters():288<info> gpua040.delta.ncsa.illinois.edu: RXC (0x176:1) PtlTE 23: 16             3433
+libfabric:4110080:1741977429::cxi:ep_data:cxip_rxc_dump_counters():288<info> gpua040.delta.ncsa.illinois.edu: RXC (0x176:1) PtlTE 23: 32             3398
+libfabric:4110080:1741977429::cxi:ep_data:cxip_rxc_dump_counters():288<info> gpua040.delta.ncsa.illinois.edu: RXC (0x176:1) PtlTE 23: 64             474
+libfabric:4110080:1741977429::cxi:ep_data:cxip_rxc_dump_counters():288<info> gpua040.delta.ncsa.illinois.edu: RXC (0x176:1) PtlTE 23: 128            3320
+libfabric:4110080:1741977429::cxi:ep_data:cxip_rxc_dump_counters():288<info> gpua040.delta.ncsa.illinois.edu: RXC (0x176:1) PtlTE 23: 256            5203
+libfabric:4110080:1741977429::cxi:ep_data:cxip_rxc_dump_counters():288<info> gpua040.delta.ncsa.illinois.edu: RXC (0x176:1) PtlTE 23: 512            5433
+libfabric:4110080:1741977429::cxi:ep_data:cxip_rxc_dump_counters():288<info> gpua040.delta.ncsa.illinois.edu: RXC (0x176:1) PtlTE 23: 1024           5468
+libfabric:4110080:1741977429::cxi:ep_data:cxip_rxc_dump_counters():288<info> gpua040.delta.ncsa.illinois.edu: RXC (0x176:1) PtlTE 23: 2048           3630
+libfabric:4110080:1741977429::cxi:ep_data:cxip_rxc_dump_counters():288<info> gpua040.delta.ncsa.illinois.edu: RXC (0x176:1) PtlTE 23: 4096           2666
+libfabric:4110080:1741977429::cxi:ep_data:cxip_rxc_dump_counters():288<info> gpua040.delta.ncsa.illinois.edu: RXC (0x176:1) PtlTE 23: 8192           3213
+libfabric:4110080:1741977429::cxi:ep_data:cxip_ptelist_bufpool_fini():342<info> gpua040.delta.ncsa.illinois.edu: RXC (0x176:1) PtlTE 23: Number of OVERFLOW buffers allocated 4
+libfabric:4110079:1741977429::cxi:domain:cxip_domain_disable():536<info> gpua040.delta.ncsa.illinois.edu: DOM (cxi0:3:1:1:0x176): Domain disabled
+libfabric:4110079:1741977429::cxi:mr:ofi_mr_cache_cleanup():494<info> MR cache stats: searches 186464, deletes 166144, hits 146093 notify 304
+libfabric:4110080:1741977429::cxi:domain:cxip_domain_disable():536<info> gpua040.delta.ncsa.illinois.edu: DOM (cxi0:4:1:1:0x176): Domain disabled
+libfabric:4110080:1741977429::cxi:mr:ofi_mr_cache_cleanup():494<info> MR cache stats: searches 186461, deletes 166144, hits 146095 notify 311
+libfabric:4110079:1741977429::core:mr:ofi_monitors_update():133<info> Stopping memory monitor: import
+libfabric:4110079:1741977429::core:mr:ofi_monitors_update():133<info> Stopping memory monitor: cuda
+libfabric:4110079:1741977429::cxi:domain:cxip_lni_res_dump():107<info> gpua040.delta.ncsa.illinois.edu: Resource usage info unavailable: cxi0 RGID: 3.
+libfabric:4110080:1741977429::core:mr:ofi_monitors_update():133<info> Stopping memory monitor: import
+libfabric:4110080:1741977429::core:mr:ofi_monitors_update():133<info> Stopping memory monitor: cuda
+libfabric:4110080:1741977429::cxi:domain:cxip_lni_res_dump():107<info> gpua040.delta.ncsa.illinois.edu: Resource usage info unavailable: cxi0 RGID: 4.
+libfabric:4110079:1741977430::psm3:core:psmx3_fini():852<info> gpua040.delta.ncsa.illinois.edu:rank0: 
+libfabric:4110079:1741977430::core:mr:ofi_monitors_cleanup():340<info> Cleaning up memory monitor uffd
+libfabric:4110079:1741977430::core:mr:ofi_monitors_cleanup():340<info> Cleaning up memory monitor memhooks
+libfabric:4110079:1741977430::core:mr:ofi_monitors_cleanup():340<info> Cleaning up memory monitor cuda
+libfabric:4110079:1741977430::core:mr:ofi_monitors_cleanup():340<info> Cleaning up memory monitor cuda_ipc
+libfabric:4110079:1741977430::core:mr:ofi_monitors_cleanup():340<info> Cleaning up memory monitor rocr
+libfabric:4110079:1741977430::core:mr:ofi_monitors_cleanup():340<info> Cleaning up memory monitor rocr_ipc
+libfabric:4110079:1741977430::core:mr:ofi_monitors_cleanup():340<info> Cleaning up memory monitor xpmem
+libfabric:4110079:1741977430::core:mr:ofi_monitors_cleanup():340<info> Cleaning up memory monitor ze
+libfabric:4110079:1741977430::core:mr:ofi_monitors_cleanup():340<info> Cleaning up memory monitor ze_ipc
+libfabric:4110079:1741977430::core:mr:ofi_monitors_cleanup():340<info> Cleaning up memory monitor import
+libfabric:4110079:1741977430::core:mr:ofi_monitors_cleanup():340<info> Cleaning up memory monitor kdreg2
+libfabric:4110080:1741977430::psm3:core:psmx3_fini():852<info> gpua040.delta.ncsa.illinois.edu:rank1: 
+libfabric:4110080:1741977430::core:mr:ofi_monitors_cleanup():340<info> Cleaning up memory monitor uffd
+libfabric:4110080:1741977430::core:mr:ofi_monitors_cleanup():340<info> Cleaning up memory monitor memhooks
+libfabric:4110080:1741977430::core:mr:ofi_monitors_cleanup():340<info> Cleaning up memory monitor cuda
+libfabric:4110080:1741977430::core:mr:ofi_monitors_cleanup():340<info> Cleaning up memory monitor cuda_ipc
+libfabric:4110080:1741977430::core:mr:ofi_monitors_cleanup():340<info> Cleaning up memory monitor rocr
+libfabric:4110080:1741977430::core:mr:ofi_monitors_cleanup():340<info> Cleaning up memory monitor rocr_ipc
+libfabric:4110080:1741977430::core:mr:ofi_monitors_cleanup():340<info> Cleaning up memory monitor xpmem
+libfabric:4110080:1741977430::core:mr:ofi_monitors_cleanup():340<info> Cleaning up memory monitor ze
+libfabric:4110080:1741977430::core:mr:ofi_monitors_cleanup():340<info> Cleaning up memory monitor ze_ipc
+libfabric:4110080:1741977430::core:mr:ofi_monitors_cleanup():340<info> Cleaning up memory monitor import
+libfabric:4110080:1741977430::core:mr:ofi_monitors_cleanup():340<info> Cleaning up memory monitor kdreg2
