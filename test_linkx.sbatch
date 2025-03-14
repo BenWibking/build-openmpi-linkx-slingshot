@@ -18,6 +18,7 @@ export LD_LIBRARY_PATH=$HOME/mpi_install/lib:$LD_LIBRARY_PATH
 
 ## set libfabric vars
 export FI_LNX_PROV_LINKS=shm+cxi
+export FI_LOG_LEVEL=debug
 
 ## SLURM_LOCALID is not set when using mpirun, so we use OMPI_COMM_WORLD_LOCAL_RANK instead
 mpirun -np 2 -mca pml cm -mca mtl ofi -mca opal_common_ofi_provider_include "shm+cxi:lnx" -prtemca ras_base_launch_orted_on_hn 1 -map-by numa bash -c "
